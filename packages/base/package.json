@@ -1,0 +1,36 @@
+{
+  "name": "@ivangabriele/eslint-config-base",
+  "description": "My ESLint configuration for Javascript (without React).",
+  "license": "MIT",
+  "version": "0.0.0",
+  "main": "./index.js",
+  "scripts": {
+    "test": "node ./index.test.js"
+  },
+  "dependencies": {
+    "eslint": "7.31.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.23.4",
+    "eslint-plugin-prettier": "3.4.0",
+    "prettier": "2.3.2"
+  },
+  "peerDependencies": {
+    "@ivangabriele/prettier-config": "^1.1.0"
+  },
+  "homepage": "https://github.com/ivangabriele/eslint-config#readme",
+  "repository": "https://github.com/ivangabriele/eslint-config",
+  "bugs": {
+    "email": "ivan.gabriele@gmail.com",
+    "url": "https://github.com/ivangabriele/eslint-config/issues"
+  },
+  "author": {
+    "name": "Ivan Gabriele",
+    "email": "ivan.gabriele@gmail.com",
+    "url": "https://www.ivangabriele.com"
+  },
+  "keywords": [
+    "eslint",
+    "config"
+  ]
+}
