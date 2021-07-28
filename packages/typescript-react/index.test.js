@@ -1,5 +1,6 @@
 const assert = require('assert')
 const { ESLint } = require('eslint')
+const fs = require('fs')
 
 const eslintConfig = require('.')
 
@@ -14,6 +15,7 @@ async function test() {
       },
     })
 
+    fs.writeFileSync(`${__dirname}/sample.ts`, `const foo = "bar"\n`)
     const results = await eslint.lintFiles('./sample.ts')
 
     assert(results.length === 1, `There should be 1 result.`)
