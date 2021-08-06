@@ -7,15 +7,13 @@
   "scripts": {
     "prepare": "husky install",
     "test": "npm run test:lint && npm run test:unit",
-    "test:lint": "prettier --check .",
+    "test:lint": "eslint .",
     "test:unit": "npm run test --workspaces"
   },
   "devDependencies": {
-    "@ivangabriele/prettier-config": "1.1.0",
     "@tsconfig/recommended": "1.0.1",
     "husky": "7.0.1",
-    "lint-staged": "11.1.1",
-    "prettier": "2.3.2"
+    "lint-staged": "11.1.1"
   },
   "workspaces": [
     "./packages/*"

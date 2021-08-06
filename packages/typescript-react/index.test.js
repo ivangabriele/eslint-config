@@ -19,12 +19,13 @@ async function test() {
     const results = await eslint.lintFiles('./sample.ts')
 
     assert(results.length === 1, `There should be 1 result.`)
-    assert(results[0].messages.length === 2, `There should be 2 messages.`)
+    assert(results[0].messages.length === 3, `There should be 3 messages.`)
+    assert(results[0].messages[0].ruleId === 'no-unused-vars', `The "no-unused-vars" rule should be triggered.`)
     assert(
-      results[0].messages[0].ruleId === '@typescript-eslint/no-unused-vars',
+      results[0].messages[1].ruleId === '@typescript-eslint/no-unused-vars',
       `The "@typescript-eslint/no-unused-vars" rule should be triggered.`,
     )
-    assert(results[0].messages[1].ruleId === 'prettier/prettier', `The "prettier/prettier" rule should be triggered.`)
+    assert(results[0].messages[2].ruleId === 'prettier/prettier', `The "prettier/prettier" rule should be triggered.`)
   } catch (err) {
     console.info(`∅ Tests failed.`)
     console.error(err)

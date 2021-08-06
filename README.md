@@ -75,10 +75,21 @@ npm i
 ### Releasing
 
 ```sh
-git co -B X.Y.Z
 npm version major|minor|patch
-npm version major|minor|patch --workspaces
-git add .
-git commit --amend --no-edit
-git push origin HEAD --tags
+```
+
+This will automatically create a full tagged commit with packages version bump in a version branch before pushing them
+to the remote repository.
+
+### Recommended IDE Settings
+
+```json
+{
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
 ```

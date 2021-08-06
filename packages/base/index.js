@@ -2,14 +2,12 @@ module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: ['prettier'],
   rules: {
-    'sort-keys': 'error',
-
     'import/order': [
       'error',
       {
         alphabetize: {
-          order: 'asc',
           caseInsensitive: true,
+          order: 'asc',
         },
         groups: [
           ['builtin', 'external'],
@@ -20,5 +18,7 @@ module.exports = {
     ],
 
     'prettier/prettier': 'error',
+
+    'sort-keys': 'error',
   },
 }

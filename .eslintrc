@@ -1,0 +1,6 @@
+{
+  "extends": "./packages/base",
+  "rules": {
+    "no-console": ["error", { "allow": ["error", "info", "warn"] }]
+  }
+}
