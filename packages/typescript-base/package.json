@@ -2,7 +2,7 @@
   "name": "@ivangabriele/eslint-config-typescript-react",
   "description": "My ESLint configuration for Typescript with React.",
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "./index.js",
   "scripts": {
     "test": "node ./index.test.js"
