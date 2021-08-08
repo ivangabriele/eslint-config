@@ -2,6 +2,8 @@ module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'prettier'],
   plugins: ['prettier'],
   rules: {
+    'sort-keys': 'error',
+
     'import/order': [
       'error',
       {
@@ -19,6 +21,6 @@ module.exports = {
 
     'prettier/prettier': 'error',
 
-    'sort-keys': 'error',
+    'react/jsx-sort-props': 'error',
   },
 }

@@ -2,6 +2,8 @@ module.exports = {
   extends: ['airbnb-typescript', 'prettier'],
   plugins: ['prettier'],
   rules: {
+    'sort-keys': 'error',
+
     'import/order': [
       'error',
       {
@@ -18,7 +20,5 @@ module.exports = {
     ],
 
     'prettier/prettier': 'error',
-
-    'sort-keys': 'error',
   },
 }
