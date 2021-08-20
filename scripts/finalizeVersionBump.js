@@ -21,6 +21,8 @@ function run(command) {
     run(`git commit --amend --no-edit`)
     run(`git tag -f v${VERSION}`)
     run(`git push origin HEAD --tags`)
+    run(`git checkout main`)
+    run(`git reset --hard origin/main`)
   } catch (err) {
     shelljs.echo(`[scripts/finalizeVersionBump.js] Error: ${err.message}`)
 
