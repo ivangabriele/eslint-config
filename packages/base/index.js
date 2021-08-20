@@ -1,8 +1,8 @@
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
-  plugins: ['prettier'],
+  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys'],
   rules: {
-    'sort-keys': 'error',
+    // 'sort-keys': 'error',
 
     'import/order': [
       'error',
@@ -11,14 +11,15 @@ module.exports = {
           caseInsensitive: true,
           order: 'asc',
         },
-        groups: [
-          ['builtin', 'external'],
-          ['index', 'internal', 'parent', 'sibling'],
-        ],
+        groups: [['builtin', 'external'], ['parent', 'sibling', 'index'], ['type'], ['object']],
         'newlines-between': 'always',
       },
     ],
 
     'prettier/prettier': 'error',
+
+    'sort-destructure-keys/sort-destructure-keys': ['error', { caseSensitive: false }],
+
+    'sort-keys-fix/sort-keys-fix': ['error', 'asc', { caseSensitive: false, natural: false }],
   },
 }
