@@ -2,6 +2,7 @@ module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'prettier'],
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys'],
   rules: {
+    curly: ['error', 'all'],
     // 'sort-keys': 'error',
 
     'import/order': [
