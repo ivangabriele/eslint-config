@@ -3,6 +3,7 @@ module.exports = {
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys'],
   rules: {
     curly: ['error', 'all'],
+    'newline-before-return': 'error',
     // 'sort-keys': 'error',
 
     'import/order': [
