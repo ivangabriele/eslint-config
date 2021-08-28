@@ -1,25 +1,44 @@
 # My ESLint Configurations
 
+[![img-license]][lnk-license] [![img-github]][lnk-github]
+
 ## Usage
 
-### Typescript with React
+### Javascript (without React)
+
+[![img-npm-base]][lnk-npm-base]
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-react
+yarn add -DE @ivangabriele/eslint-config-base
 ```
 
 Then extend it in your `.eslintrc`:
 
 ```json
 {
-  "extends": "@ivangabriele/eslint-config-typescript-react",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  }
+  "extends": "@ivangabriele/eslint-config-base"
+}
+```
+
+### Javascript with React
+
+[![img-npm-react]][lnk-npm-react]
+
+```sh
+yarn add -DE @ivangabriele/eslint-config-react
+```
+
+Then extend it in your `.eslintrc`:
+
+```json
+{
+  "extends": "@ivangabriele/eslint-config-react"
 }
 ```
 
 ### Typescript (without React)
+
+[![img-npm-typescript-base]][lnk-npm-typescript-base]
 
 ```sh
 yarn add -DE @ivangabriele/eslint-config-typescript-base
@@ -36,31 +55,22 @@ Then extend it in your `.eslintrc`:
 }
 ```
 
-### Javascript with React
+### Typescript with React
+
+[![img-npm-typescript-react]][lnk-npm-typescript-react]
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-react
+yarn add -DE @ivangabriele/eslint-config-typescript-react
 ```
 
 Then extend it in your `.eslintrc`:
 
 ```json
 {
-  "extends": "@ivangabriele/eslint-config-react"
-}
-```
-
-### Javascript (without React)
-
-```sh
-yarn add -DE @ivangabriele/eslint-config-base
-```
-
-Then extend it in your `.eslintrc`:
-
-```json
-{
-  "extends": "@ivangabriele/eslint-config-base"
+  "extends": "@ivangabriele/eslint-config-typescript-react",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
 }
 ```
 
@@ -93,3 +103,19 @@ to the remote repository.
   }
 }
 ```
+
+---
+
+[img-github]:
+  https://img.shields.io/github/workflow/status/ivangabriele/eslint-config/Test%20&%20Publish/main?style=flat-square
+[img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=flat-square
+[lnk-github]: https://github.com/ivangabriele/eslint-config/actions?query=branch%3Amain++
+[lnk-license]: https://github.com/ivangabriele/eslint-config/blob/main/LICENSE
+[img-npm-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-base?style=flat-square
+[lnk-npm-base]: https://www.npmjs.com/package/@ivangabriele/eslint-config-base
+[img-npm-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square
+[lnk-npm-react]: https://www.npmjs.com/package/@ivangabriele/eslint-config-react
+[img-npm-typescript-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-base?style=flat-square
+[lnk-npm-typescript-base]: https://www.npmjs.com/package/@ivangabriele/eslint-config-typescript-base
+[img-npm-typescript-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-react?style=flat-square
+[lnk-npm-typescript-react]: https://www.npmjs.com/package/@ivangabriele/eslint-config-typescript-react
