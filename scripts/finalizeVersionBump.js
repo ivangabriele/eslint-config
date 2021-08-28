@@ -16,6 +16,7 @@ function run(command) {
 ;(() => {
   try {
     run(`git checkout -B ${VERSION}`)
+    run(`npm i`)
     run(`npm version ${VERSION} --workspaces`)
     run(`git add .`)
     run(`git commit --amend --no-edit`)
