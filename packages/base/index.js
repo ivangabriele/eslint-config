@@ -11,7 +11,7 @@ module.exports = {
           caseInsensitive: true,
           order: 'asc',
         },
-        groups: [['builtin', 'external'], ['parent', 'sibling', 'index'], ['type'], ['object']],
+        groups: [['builtin', 'external', 'internal'], ['parent', 'index', 'sibling'], ['type'], ['object']],
         'newlines-between': 'always',
       },
     ],
