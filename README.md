@@ -95,9 +95,13 @@ to the remote repository.
 
 ```json
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.codeActionsOnSave.mode": "all",
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "eslint.format.enable": true,
-  "eslint.packageManager": "yarn",
+  "eslint.packageManager": "npm",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
