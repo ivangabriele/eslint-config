@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['airbnb-typescript', 'prettier'],
-  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys'],
+  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys'],
   rules: {
     curly: ['error', 'all'],
     'newline-before-return': 'error',
@@ -25,5 +25,8 @@ module.exports = {
     'sort-destructure-keys/sort-destructure-keys': ['error', { caseSensitive: false }],
 
     'sort-keys-fix/sort-keys-fix': ['error', 'asc', { caseSensitive: false, natural: false }],
+
+    'typescript-sort-keys/interface': 'error',
+    'typescript-sort-keys/string-enum': 'error',
   },
 }
