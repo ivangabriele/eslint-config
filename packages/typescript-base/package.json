@@ -8,7 +8,7 @@
     "test": "node ./index.test.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "4.29.3",
+    "@typescript-eslint/eslint-plugin": "4.30.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-airbnb-typescript": "12.3.1",
