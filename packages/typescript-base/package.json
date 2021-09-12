@@ -8,7 +8,7 @@
     "test": "node ./index.test.js"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "4.30.0",
+    "@typescript-eslint/eslint-plugin": "4.31.0",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-airbnb-typescript": "12.3.1",
@@ -18,7 +18,7 @@
     "eslint-plugin-sort-destructure-keys": "1.3.5",
     "eslint-plugin-sort-keys-fix": "1.1.2",
     "eslint-plugin-typescript-sort-keys": "1.8.0",
-    "prettier": "2.3.2"
+    "prettier": "2.4.0"
   },
   "peerDependencies": {
     "@ivangabriele/prettier-config": "1.1.0"
