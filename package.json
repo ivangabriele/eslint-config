@@ -15,7 +15,7 @@
   "devDependencies": {
     "@tsconfig/recommended": "1.0.1",
     "husky": "7.0.2",
-    "lint-staged": "11.1.2",
+    "lint-staged": "11.2.3",
     "shelljs": "0.8.4"
   },
   "workspaces": [
