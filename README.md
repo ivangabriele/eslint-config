@@ -101,6 +101,7 @@ to the remote repository.
   "eslint.codeActionsOnSave.mode": "all",
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "eslint.format.enable": true,
+  "editor.formatOnSave": true,
   "eslint.packageManager": "npm",
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
