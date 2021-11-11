@@ -1,6 +1,6 @@
 {
-  "name": "@ivangabriele/eslint-config-typescript-react",
-  "description": "My ESLint configuration for Typescript with React.",
+  "name": "@ivangabriele/eslint-config-typescript-base",
+  "description": "My ESLint configuration for Typescript (without React).",
   "license": "MIT",
   "version": "1.5.0",
   "main": "./index.js",
