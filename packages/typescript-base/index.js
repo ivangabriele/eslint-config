@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb-typescript', 'prettier'],
+  extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys'],
   rules: {
     curly: ['error', 'all'],
