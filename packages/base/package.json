@@ -8,10 +8,10 @@
     "test": "node ./index.test.js"
   },
   "dependencies": {
-    "eslint": "8.0.0",
-    "eslint-config-airbnb-base": "14.2.1",
+    "eslint": "7.32.0",
+    "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-import": "2.25.3",
     "eslint-plugin-prettier": "4.0.0",
     "eslint-plugin-sort-destructure-keys": "1.4.0",
     "eslint-plugin-sort-keys-fix": "1.1.2",

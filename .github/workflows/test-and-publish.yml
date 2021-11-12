@@ -1,34 +1,46 @@
 name: Test & Publish
 
-on: [push]
+on: push
 
 jobs:
-  Test:
+  test:
+    name: Lint & Unit Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: actions/setup-node@v2
         with:
-          node-version: '16'
-      - run: npm install
-      - run: npm test
+          node-version: 16
+      - name: Install
+        run: npm i
+      - name: Lint
+        run: npm run test:lint
+      - name: Unit Test
+        run: npm run test:unit
 
-  Publish:
-    needs: Test
+  publish:
+    name: Publish to NPM & Github
+    needs: test
     if: ${{ contains(github.ref, 'refs/tags/') }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup
+        uses: actions/setup-node@v2
         with:
-          node-version: '16'
-          registry-url: 'https://registry.npmjs.org'
-      - run: npm publish --access=public --workspaces
+          node-version: 16
+      - name: Publish to NPM
+        run: npm publish --access=public --workspaces
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - uses: actions/setup-node@v2
+      - name: Setup (Github)
+        uses: actions/setup-node@v2
         with:
           registry-url: 'https://npm.pkg.github.com'
-      - run: npm publish --access=public --workspaces
+      - name: Publish to NPM
+        run: npm publish --access=public --workspaces
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
