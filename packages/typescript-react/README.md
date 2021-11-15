@@ -2,6 +2,8 @@
 
 [![img-license]][lnk-license] [![img-npm]][lnk-npm] [![img-github]][lnk-github]
 
+My most commonly used ESLint configuration for Typescript with React.
+
 ## Usage
 
 ```sh
