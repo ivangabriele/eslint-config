@@ -13,6 +13,7 @@
     "postversion": "node ./scripts/finalizeVersionBump.js"
   },
   "devDependencies": {
+    "@ivangabriele/commitlint-config": "1.0.1",
     "@ivangabriele/prettier-config": "2.0.1",
     "@tsconfig/recommended": "1.0.1",
     "husky": "7.0.4",
