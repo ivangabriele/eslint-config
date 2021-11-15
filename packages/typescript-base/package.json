@@ -1,11 +1,12 @@
 {
   "name": "@ivangabriele/eslint-config-typescript-base",
-  "description": "My ESLint configuration for Typescript (without React).",
+  "description": "My most commonly used ESLint configuration for Typescript (without React).",
   "license": "MIT",
   "version": "2.0.0",
   "main": "./index.js",
   "scripts": {
-    "test": "node ./index.test.js"
+    "test": "yarn test:unit",
+    "test:unit": "node ./index.test.js"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "5.3.1",

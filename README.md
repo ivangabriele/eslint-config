@@ -2,6 +2,8 @@
 
 [![img-license]][lnk-license] [![img-github]][lnk-github]
 
+My most commonly used ESLint configurations.
+
 ## Usage
 
 ### Javascript (without React)
