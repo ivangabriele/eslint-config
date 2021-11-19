@@ -26,4 +26,22 @@ module.exports = {
 
     'sort-keys-fix/sort-keys-fix': ['error', 'asc', { caseSensitive: false, natural: false }],
   },
+  overrides: [
+    {
+      files: ['**/*.test.js'],
+      plugins: ['jest'],
+      env: {
+        browser: false,
+        jest: true,
+        node: true,
+      },
+      rules: {
+        'jest/no-disabled-tests': 'error',
+        'jest/no-focused-tests': 'error',
+        'jest/no-identical-title': 'error',
+        'jest/prefer-to-have-length': 'error',
+        'jest/valid-expect': 'error',
+      },
+    },
+  ],
 }

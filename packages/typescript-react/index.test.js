@@ -1,11 +1,14 @@
-const assert = require('assert')
 const { ESLint } = require('eslint')
 const fs = require('fs')
 
 const eslintConfig = require('.')
 
-async function test() {
-  try {
+describe('@ivangabriele/eslint-config-typescript-react', () => {
+  let results
+
+  beforeAll(async () => {
+    console.error = jest.fn()
+
     const eslint = new ESLint({
       baseConfig: eslintConfig,
       overrideConfig: {
@@ -16,23 +19,33 @@ async function test() {
     })
 
     fs.writeFileSync(`${__dirname}/sample.ts`, `const foo = "bar"\n`)
-    const results = await eslint.lintFiles('./sample.ts')
+    results = await eslint.lintFiles('./sample.ts')
+  })
 
-    assert(results.length === 1, `There should be 1 result.`)
-    assert(results[0].messages.length === 3, `There should be 3 messages.`)
-    assert(results[0].messages[0].ruleId === 'no-unused-vars', `The "no-unused-vars" rule should be triggered.`)
-    assert(
-      results[0].messages[1].ruleId === '@typescript-eslint/no-unused-vars',
-      `The "@typescript-eslint/no-unused-vars" rule should be triggered.`,
+  test('It should log an error because "react" is not installed.', () => {
+    expect(console.error).toHaveBeenCalledTimes(1)
+    expect(console.error).toHaveBeenCalledWith(
+      'Warning: React version was set to "detect" in eslint-plugin-react settings, but the "react" package is not installed. Assuming latest React version for linting.',
     )
-    assert(results[0].messages[2].ruleId === 'prettier/prettier', `The "prettier/prettier" rule should be triggered.`)
-  } catch (err) {
-    console.info(`∅ Tests failed.`)
-    console.error(err)
-    process.exit(1)
-  }
+  })
 
-  console.info(`√ Tests passed.`)
-}
+  test('There should be 1 result.', () => {
+    expect(results).toHaveLength(1)
+  })
 
-test()
+  test('There should be 3 messages.', () => {
+    expect(results[0].messages).toHaveLength(3)
+  })
+
+  test('The "no-unused-vars" rule should be triggered.', () => {
+    expect(results[0].messages[0].ruleId).toBe('no-unused-vars')
+  })
+
+  test('The "@typescript-eslint/no-unused-vars" rule should be triggered.', () => {
+    expect(results[0].messages[1].ruleId).toBe('@typescript-eslint/no-unused-vars')
+  })
+
+  test('The "prettier/prettier" rule should be triggered.', () => {
+    expect(results[0].messages[2].ruleId).toBe('prettier/prettier')
+  })
+})

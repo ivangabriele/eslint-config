@@ -1,26 +1,41 @@
-const assert = require('assert')
 const { ESLint } = require('eslint')
 
 const eslintConfig = require('.')
 
-async function test() {
-  try {
+describe('@ivangabriele/eslint-config-base', () => {
+  let results
+
+  beforeAll(async () => {
     const eslint = new ESLint({ baseConfig: eslintConfig })
 
     const source = `const foo = "bar"`
-    const results = await eslint.lintText(source)
+    results = await eslint.lintText(source)
+  })
 
-    assert(results.length === 1, `There should be 1 result.`)
-    assert(results[0].messages.length === 2, `There should be 2 messages.`)
-    assert(results[0].messages[0].ruleId === 'no-unused-vars', `The "no-unused-vars" rule should be triggered.`)
-    assert(results[0].messages[1].ruleId === 'prettier/prettier', `The "prettier/prettier" rule should be triggered.`)
-  } catch (err) {
-    console.info(`∅ Tests failed.`)
-    console.error(err)
-    process.exit(1)
-  }
+  test('There should be 1 result.', () => {
+    expect(results).toHaveLength(1)
+  })
 
-  console.info(`√ Tests passed.`)
-}
+  test('There should be 2 messages.', () => {
+    expect(results[0].messages).toHaveLength(2)
+  })
 
-test()
+  test('The "no-unused-vars" rule should be triggered.', () => {
+    expect(results[0].messages[0].ruleId).toBe('no-unused-vars')
+  })
+
+  test('The "prettier/prettier" rule should be triggered.', () => {
+    expect(results[0].messages[1].ruleId).toBe('prettier/prettier')
+  })
+})
+
+// test('', () => {
+
+//   expect(results).toHaveLength(1)
+//   expect(results[0].messages).toHaveLength(2)
+//   expect(results[0].messages).toMatchObject([
+//     {
+//       ruleId: 'no-unused-vars', `The "no-unused-vars" rule should be triggered.`
+//     }
+//   ])
+// })
