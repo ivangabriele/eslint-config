@@ -2,7 +2,7 @@
   "name": "@ivangabriele/eslint-config",
   "description": "My most commonly used ESLint configurations.",
   "license": "MIT",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "private": true,
   "scripts": {
     "prepare": "husky install",
