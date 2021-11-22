@@ -26,6 +26,9 @@
   "peerDependencies": {
     "@ivangabriele/prettier-config": "2.0.2"
   },
+  "resolutions": {
+    "json-schema": ">=0.4.0"
+  },
   "homepage": "https://github.com/ivangabriele/eslint-config#readme",
   "repository": "https://github.com/ivangabriele/eslint-config",
   "bugs": {
