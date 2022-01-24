@@ -8,6 +8,7 @@ My most commonly used ESLint configuration for Javascript (without React).
 
 ```sh
 yarn add -DE @ivangabriele/eslint-config-base
+npx install-peerdeps -D @ivangabriele/eslint-config-base
 ```
 
 Then extend it in your `.eslintrc`:

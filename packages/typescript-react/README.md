@@ -8,6 +8,7 @@ My most commonly used ESLint configuration for Typescript with React.
 
 ```sh
 yarn add -DE @ivangabriele/eslint-config-typescript-react
+npx install-peerdeps -D @ivangabriele/eslint-config-typescript-react
 ```
 
 Then extend it in your `.eslintrc`:
