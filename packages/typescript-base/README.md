@@ -21,6 +21,14 @@ Then extend it in your `.eslintrc`:
 }
 ```
 
+### With Yarn Plug'n'Play
+
+#### Visual Studio Code
+
+```sh
+yarn dlx @yarnpkg/sdks vscode
+```
+
 ## Contribution
 
 This is a monorepository, please check the [root readme][lnk-contribution].
