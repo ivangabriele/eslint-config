@@ -12,6 +12,7 @@ My most commonly used ESLint configurations.
 
 ```sh
 yarn add -DE @ivangabriele/eslint-config-base
+npx install-peerdeps -D @ivangabriele/eslint-config-base
 ```
 
 Then extend it in your `.eslintrc`:
@@ -28,6 +29,7 @@ Then extend it in your `.eslintrc`:
 
 ```sh
 yarn add -DE @ivangabriele/eslint-config-react
+npx install-peerdeps -D @ivangabriele/eslint-config-react
 ```
 
 Then extend it in your `.eslintrc`:
@@ -44,6 +46,7 @@ Then extend it in your `.eslintrc`:
 
 ```sh
 yarn add -DE @ivangabriele/eslint-config-typescript-base
+npx install-peerdeps -D @ivangabriele/eslint-config-typescript-base
 ```
 
 Then extend it in your `.eslintrc`:
@@ -63,6 +66,7 @@ Then extend it in your `.eslintrc`:
 
 ```sh
 yarn add -DE @ivangabriele/eslint-config-typescript-react
+npx install-peerdeps -D @ivangabriele/eslint-config-typescript-react
 ```
 
 Then extend it in your `.eslintrc`:
