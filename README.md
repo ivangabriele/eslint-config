@@ -82,7 +82,7 @@ Then extend it in your `.eslintrc`:
 
 ### Typescript with Next.js
 
-[![img-npm-typescript-react]][lnk-npm-typescript-next]
+[![img-npm-typescript-next]][lnk-npm-typescript-next]
 
 ```sh
 yarn add -DE @ivangabriele/eslint-config-typescript-next
@@ -145,16 +145,18 @@ to the remote repository.
 
 ---
 
-[img-github]:
-  https://img.shields.io/github/workflow/status/ivangabriele/eslint-config/Test%20&%20Publish/main?style=flat-square
+[img-github]: https://img.shields.io/github/workflow/status/ivangabriele/eslint-config/Test%20&%20Publish/main?style=flat-square
 [img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=flat-square
+[img-npm-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-base?style=flat-square
+[img-npm-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square
+[img-npm-typescript-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-base?style=flat-square
+[img-npm-typescript-next]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-next?style=flat-square
+[img-npm-typescript-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-react?style=flat-square
+
 [lnk-github]: https://github.com/ivangabriele/eslint-config/actions?query=branch%3Amain++
 [lnk-license]: https://github.com/ivangabriele/eslint-config/blob/main/LICENSE
-[img-npm-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-base?style=flat-square
 [lnk-npm-base]: https://www.npmjs.com/package/@ivangabriele/eslint-config-base
-[img-npm-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square
 [lnk-npm-react]: https://www.npmjs.com/package/@ivangabriele/eslint-config-react
-[img-npm-typescript-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-base?style=flat-square
 [lnk-npm-typescript-base]: https://www.npmjs.com/package/@ivangabriele/eslint-config-typescript-base
-[img-npm-typescript-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-react?style=flat-square
+[lnk-npm-typescript-next]: https://www.npmjs.com/package/@ivangabriele/eslint-config-typescript-next
 [lnk-npm-typescript-react]: https://www.npmjs.com/package/@ivangabriele/eslint-config-typescript-react
