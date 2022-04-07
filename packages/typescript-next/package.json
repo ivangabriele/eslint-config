@@ -1,0 +1,70 @@
+{
+  "name": "@ivangabriele/eslint-config-typescript-next",
+  "description": "My most commonly used ESLint configuration for Typescript with Next.js.",
+  "license": "MIT",
+  "version": "3.0.1",
+  "main": "./index.js",
+  "scripts": {
+    "test": "yarn test:unit",
+    "test:unit": "jest --config=./config/jest.config.js"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.18.0",
+    "@typescript-eslint/parser": "5.17.0",
+    "eslint": "8.12.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jest": "26.1.3",
+    "eslint-plugin-jsx-a11y": "6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "7.29.4",
+    "eslint-plugin-react-hooks": "4.4.0",
+    "eslint-plugin-sort-destructure-keys": "1.4.0",
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "eslint-plugin-typescript-sort-keys": "2.1.0",
+    "prettier": "2.6.2"
+  },
+  "peerDependencies": {
+    "@ivangabriele/prettier-config": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.0.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-sort-destructure-keys": "^1.4.0",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.4"
+  },
+  "resolutions": {
+    "json-schema": ">=0.4.0"
+  },
+  "homepage": "https://github.com/ivangabriele/eslint-config#readme",
+  "repository": "https://github.com/ivangabriele/eslint-config",
+  "bugs": {
+    "email": "ivan.gabriele@gmail.com",
+    "url": "https://github.com/ivangabriele/eslint-config/issues"
+  },
+  "author": {
+    "name": "Ivan Gabriele",
+    "email": "ivan.gabriele@gmail.com",
+    "url": "https://www.ivangabriele.com"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "next",
+    "next,js",
+    "typescript"
+  ]
+}
