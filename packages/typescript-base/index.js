@@ -46,5 +46,25 @@ module.exports = {
         'jest/valid-expect': 'error',
       },
     },
+    {
+      files: [
+        '**/*.spec.js',
+        '**/*.test.js',
+        './config/*.js',
+        './scripts/*.js',
+        '**/*.spec.ts',
+        '**/*.test.ts',
+        './config/*.ts',
+        './scripts/*.ts',
+      ],
+      rules: {
+        'import/no-extraneous-dependencies': [
+          'error',
+          {
+            devDependencies: true,
+          },
+        ],
+      },
+    },
   ],
 }
