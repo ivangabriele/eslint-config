@@ -3,8 +3,8 @@ module.exports = {
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys'],
   rules: {
     curly: ['error', 'all'],
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'newline-before-return': 'error',
-    // 'sort-keys': 'error',
 
     'import/no-default-export': 'error',
     'import/order': [
