@@ -80,6 +80,26 @@ Then extend it in your `.eslintrc`:
 }
 ```
 
+### Typescript with Next.js
+
+[![img-npm-typescript-react]][lnk-npm-typescript-next]
+
+```sh
+yarn add -DE @ivangabriele/eslint-config-typescript-next
+npx install-peerdeps -D @ivangabriele/eslint-config-typescript-next
+```
+
+Then extend it in your `.eslintrc`:
+
+```json
+{
+  "extends": "@ivangabriele/eslint-config-typescript-next",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}
+```
+
 ### With Yarn Plug'n'Play
 
 #### Visual Studio Code
