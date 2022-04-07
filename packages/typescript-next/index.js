@@ -4,7 +4,6 @@ module.exports = {
   rules: {
     curly: ['error', 'all'],
     'newline-before-return': 'error',
-    // 'sort-keys': 'error',
 
     'import/no-default-export': 'error',
     'import/order': [
@@ -28,6 +27,8 @@ module.exports = {
     'sort-destructure-keys/sort-destructure-keys': ['error', { caseSensitive: false }],
 
     'sort-keys-fix/sort-keys-fix': ['error', 'asc', { caseSensitive: false, natural: false }],
+
+    '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
 
     'typescript-sort-keys/interface': 'error',
     'typescript-sort-keys/string-enum': 'error',
