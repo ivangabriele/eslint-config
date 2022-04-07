@@ -7,16 +7,21 @@
   "scripts": {
     "prepare": "husky install",
     "test": "yarn test:lint && yarn test:unit",
-    "test:lint": "eslint . --ext=js",
+    "test:lint": "eslint --config=./.eslintrc.dev.json --ext=js",
     "test:unit": "yarn workspaces run test:unit",
     "preversion": "yarn test",
     "postversion": "node ./scripts/finalizeVersionBump.js"
   },
   "devDependencies": {
+    "@commitlint/cli": "16.2.3",
+    "@commitlint/config-conventional": "16.2.1",
     "@ivangabriele/commitlint-config": "1.0.5",
     "@ivangabriele/prettier-config": "3.0.2",
+    "@swc/core": "1.2.164",
+    "@swc/jest": "0.2.20",
     "@tsconfig/recommended": "1.0.1",
     "@types/jest": "27.4.1",
+    "enhanced-resolve": "5.9.2",
     "husky": "7.0.4",
     "jest": "27.5.1",
     "prettier": "2.6.2",

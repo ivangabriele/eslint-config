@@ -33,19 +33,15 @@ describe('@ivangabriele/eslint-config-typescript-react', () => {
     expect(results).toHaveLength(1)
   })
 
-  test('There should be 3 messages.', () => {
-    expect(results[0].messages).toHaveLength(3)
-  })
-
-  test('The "no-unused-vars" rule should be triggered.', () => {
-    expect(results[0].messages[0].ruleId).toBe('no-unused-vars')
+  test('There should be 2 messages.', () => {
+    expect(results[0].messages).toHaveLength(2)
   })
 
   test('The "@typescript-eslint/no-unused-vars" rule should be triggered.', () => {
-    expect(results[0].messages[1].ruleId).toBe('@typescript-eslint/no-unused-vars')
+    expect(results[0].messages[0].ruleId).toBe('@typescript-eslint/no-unused-vars')
   })
 
   test('The "prettier/prettier" rule should be triggered.', () => {
-    expect(results[0].messages[2].ruleId).toBe('prettier/prettier')
+    expect(results[0].messages[1].ruleId).toBe('prettier/prettier')
   })
 })
