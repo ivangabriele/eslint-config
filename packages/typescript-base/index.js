@@ -6,6 +6,7 @@ module.exports = {
     'newline-before-return': 'error',
     // 'sort-keys': 'error',
 
+    'import/no-default-export': 'error',
     'import/order': [
       'error',
       {
@@ -17,6 +18,7 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    'import/prefer-default-export': 'off',
 
     'prettier/prettier': 'error',
 
