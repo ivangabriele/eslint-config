@@ -23,6 +23,7 @@ module.exports = {
 
     'react/jsx-sort-props': 'error',
     'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
 
     'sort-destructure-keys/sort-destructure-keys': ['error', { caseSensitive: false }],
 
