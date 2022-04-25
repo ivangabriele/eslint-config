@@ -35,7 +35,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['pages/**/*.js, pages/**/*.jsx', 'pages/**/*.ts, pages/**/*.tsx'],
+      files: ['./pages/**/*.js', './pages/**/*.jsx', './pages/**/*.ts', './pages/**/*.tsx'],
       rules: {
         'import/no-default-export': 'off',
         'import/prefer-default-export': 'error',
