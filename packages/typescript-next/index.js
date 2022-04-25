@@ -1,6 +1,7 @@
 module.exports = {
   extends: ['airbnb', 'airbnb-typescript', 'prettier'],
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys'],
+  ignorePatterns: ['/.next/', '/.yarn/', 'next-env.d.ts'],
   rules: {
     curly: ['error', 'all'],
     'newline-before-return': 'error',
