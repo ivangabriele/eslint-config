@@ -13,8 +13,8 @@
     "postversion": "node ./scripts/finalizeVersionBump.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "16.3.0",
-    "@commitlint/config-conventional": "16.2.4",
+    "@commitlint/cli": "17.0.0",
+    "@commitlint/config-conventional": "17.0.0",
     "@ivangabriele/commitlint-config": "1.0.5",
     "@ivangabriele/prettier-config": "3.0.2",
     "@swc/core": "1.2.189",
