@@ -9,14 +9,14 @@
     "test:unit": "jest"
   },
   "devDependencies": {
-    "eslint": "8.14.0",
+    "eslint": "8.16.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jest": "26.1.5",
+    "eslint-plugin-jest": "26.2.2",
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-react": "7.29.4",
+    "eslint-plugin-react": "7.30.0",
     "eslint-plugin-react-hooks": "4.5.0",
     "eslint-plugin-sort-destructure-keys": "1.4.0",
     "eslint-plugin-sort-keys-fix": "1.1.2",
