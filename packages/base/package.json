@@ -31,6 +31,9 @@
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "prettier": "^2.5.1"
   },
+  "resolutions": {
+    "minimist": ">=1.2.6"
+  },
   "homepage": "https://github.com/ivangabriele/eslint-config#readme",
   "repository": "https://github.com/ivangabriele/eslint-config",
   "bugs": {
