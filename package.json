@@ -22,7 +22,7 @@
     "@tsconfig/recommended": "1.0.1",
     "@types/jest": "27.5.1",
     "enhanced-resolve": "5.9.3",
-    "husky": "7.0.4",
+    "husky": "8.0.1",
     "jest": "28.1.0",
     "prettier": "2.6.2",
     "shelljs": "0.8.5",
