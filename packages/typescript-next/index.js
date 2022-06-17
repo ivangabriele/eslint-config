@@ -40,6 +40,29 @@ module.exports = {
   },
   overrides: [
     {
+      files: [
+        './app/**/*.js',
+        './app/**/*.jsx',
+        './common/**/*.js',
+        './pages/**/*.jsx',
+        './app/**/*.ts',
+        './app/**/*.tsx',
+        './common/**/*.ts',
+        './pages/**/*.tsx',
+      ],
+      env: {
+        browser: true,
+        node: true,
+      },
+    },
+    {
+      files: ['./api/**/*.js', './pages/**/*.js', './api/**/*.ts', './pages/**/*.ts'],
+      env: {
+        browser: false,
+        node: true,
+      },
+    },
+    {
       files: ['./pages/**/*.js', './pages/**/*.jsx', './pages/**/*.ts', './pages/**/*.tsx'],
       rules: {
         'import/no-default-export': 'off',
@@ -47,12 +70,10 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.test.js', '**/*.test.ts'],
+      files: ['**/*.test.js', '**/*.test.jsx', '**/*.test.ts', '**/*.test.tsx'],
       plugins: ['jest'],
       env: {
-        browser: false,
         jest: true,
-        node: true,
       },
       rules: {
         'jest/no-disabled-tests': 'error',
@@ -66,12 +87,14 @@ module.exports = {
       files: [
         '**/*.spec.js',
         '**/*.test.js',
+        '**/*.test.jsx',
         './*.cjs',
         './*.js',
         './config/**/*.js',
         './scripts/**/*.js',
         '**/*.spec.ts',
         '**/*.test.ts',
+        '**/*.test.tsx',
         './config/**/*.ts',
         './scripts/**/*.ts',
       ],
@@ -82,6 +105,22 @@ module.exports = {
             devDependencies: true,
           },
         ],
+      },
+    },
+    {
+      files: [
+        '**/*.spec.js',
+        './*.cjs',
+        './*.js',
+        './config/**/*.js',
+        './scripts/**/*.js',
+        '**/*.spec.ts',
+        './config/**/*.ts',
+        './scripts/**/*.ts',
+      ],
+      env: {
+        browser: false,
+        node: true,
       },
     },
   ],
