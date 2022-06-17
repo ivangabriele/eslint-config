@@ -13,20 +13,20 @@
     "postversion": "node ./scripts/finalizeVersionBump.js"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.0.0",
-    "@commitlint/config-conventional": "17.0.0",
+    "@commitlint/cli": "17.0.2",
+    "@commitlint/config-conventional": "17.0.2",
     "@ivangabriele/commitlint-config": "1.0.6",
     "@ivangabriele/prettier-config": "3.1.0",
-    "@swc/core": "1.2.192",
+    "@swc/core": "1.2.203",
     "@swc/jest": "0.2.21",
     "@tsconfig/recommended": "1.0.1",
     "@types/jest": "28.1.2",
     "enhanced-resolve": "5.9.3",
     "husky": "8.0.1",
-    "jest": "28.1.0",
-    "prettier": "2.6.2",
+    "jest": "28.1.1",
+    "prettier": "2.7.1",
     "shelljs": "0.8.5",
-    "typescript": "4.7.2"
+    "typescript": "4.7.4"
   },
   "resolutions": {
     "json-schema": ">=0.4.0",
