@@ -1,5 +1,8 @@
 module.exports = {
   extends: ['airbnb', 'airbnb/hooks', 'prettier'],
+  parserOptions: {
+    extraFileExtensions: ['.cjs'],
+  },
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys'],
   rules: {
     curly: ['error', 'all'],
@@ -47,7 +50,7 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.spec.js', '**/*.test.js', './config/*.js', './scripts/*.js'],
+      files: ['**/*.spec.js', '**/*.test.js', './*.cjs', './*.js', './config/*.js', './scripts/*.js'],
       rules: {
         'import/no-extraneous-dependencies': [
           'error',
