@@ -1,5 +1,8 @@
 module.exports = {
   extends: ['airbnb', 'airbnb-typescript', 'prettier'],
+  parserOptions: {
+    extraFileExtensions: ['.cjs'],
+  },
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys'],
   ignorePatterns: ['/.next/', '/.yarn/', 'next-env.d.ts'],
   rules: {
@@ -63,12 +66,14 @@ module.exports = {
       files: [
         '**/*.spec.js',
         '**/*.test.js',
-        './config/*.js',
-        './scripts/*.js',
+        './*.cjs',
+        './*.js',
+        './config/**/*.js',
+        './scripts/**/*.js',
         '**/*.spec.ts',
         '**/*.test.ts',
-        './config/*.ts',
-        './scripts/*.ts',
+        './config/**/*.ts',
+        './scripts/**/*.ts',
       ],
       rules: {
         'import/no-extraneous-dependencies': [
