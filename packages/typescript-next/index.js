@@ -8,6 +8,7 @@ module.exports = {
   rules: {
     curly: ['error', 'all'],
     'newline-before-return': 'error',
+    'no-console': 'error',
 
     'import/no-default-export': 'error',
     'import/order': [

@@ -8,6 +8,7 @@ module.exports = {
     curly: ['error', 'all'],
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'newline-before-return': 'error',
+    'no-console': 'error',
 
     'import/no-default-export': 'error',
     'import/order': [
