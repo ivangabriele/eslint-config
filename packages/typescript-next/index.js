@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb-typescript', 'prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript', 'prettier'],
   parserOptions: {
     extraFileExtensions: ['.cjs'],
   },
