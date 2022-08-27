@@ -3,7 +3,7 @@ module.exports = {
   parserOptions: {
     extraFileExtensions: ['.cjs'],
   },
-  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys'],
+  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'no-null'],
   rules: {
     curly: ['error', 'all'],
     'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
@@ -23,6 +23,8 @@ module.exports = {
       },
     ],
     'import/prefer-default-export': 'off',
+
+    'no-null/no-null': 'warn',
 
     'prettier/prettier': 'error',
 
