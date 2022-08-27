@@ -12,14 +12,14 @@ jobs:
       - name: Setup
         uses: actions/setup-node@v3
         with:
-          cache: yarn
+          cache: npm
           node-version: 16
       - name: Install
-        run: yarn
+        run: npm ci
       - name: Lint
-        run: yarn test:lint
+        run: npm run test:lint
       - name: Unit Test
-        run: yarn test:unit
+        run: npm run test:unit
 
   publish:
     name: Publish to NPM & Github

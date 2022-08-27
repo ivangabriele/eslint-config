@@ -16,7 +16,7 @@ function run(command) {
 ;(() => {
   try {
     run(`git checkout -B ci-release-v${VERSION}`)
-    run(`yarn`)
+    run(`npm ci`)
     run(`npm version ${VERSION} --workspaces`)
     run(`git add .`)
     run(`git commit --amend -m "ci(release): ${VERSION}"`)
