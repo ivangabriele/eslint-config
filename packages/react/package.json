@@ -8,8 +8,7 @@
     "test": "npm run test:unit",
     "test:unit": "jest"
   },
-  "devDependencies": {
-    "eslint": "8.32.0",
+  "dependencies": {
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-import": "2.27.4",
@@ -20,24 +19,15 @@
     "eslint-plugin-react": "7.32.0",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-sort-destructure-keys": "1.4.0",
-    "eslint-plugin-sort-keys-fix": "1.1.2",
-    "prettier": "2.8.3"
+    "eslint-plugin-sort-keys-fix": "1.1.2"
+  },
+  "devDependencies": {
+    "@ivangabriele/prettier-config": "3.1.0",
+    "eslint": "8.32.0"
   },
   "peerDependencies": {
-    "@ivangabriele/prettier-config": "^3.0.2",
-    "eslint": "^8.0.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-jest": "^27.0.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-no-null": "1.0.2",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.28.0",
-    "eslint-plugin-react-hooks": "^4.3.0",
-    "eslint-plugin-sort-destructure-keys": "^1.4.0",
-    "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "prettier": "^2.5.1"
+    "@ivangabriele/prettier-config": "^3.0.0",
+    "eslint": "^8.0.0"
   },
   "resolutions": {
     "minimist": ">=1.2.6"
