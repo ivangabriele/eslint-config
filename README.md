@@ -33,13 +33,13 @@ Then extend it in your `.eslintrc`:
 [![img-npm-react]][lnk-npm-react]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-base
+npm i -DE eslint @ivangabriele/eslint-config-react
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-base
+yarn add -DE eslint @ivangabriele/eslint-config-react
 ```
 
 Then extend it in your `.eslintrc`:
@@ -55,13 +55,13 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-base]][lnk-npm-typescript-base]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-base
+npm i -DE eslint @ivangabriele/eslint-config-typescript-base
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-base
+yarn add -DE eslint @ivangabriele/eslint-config-typescript-base
 ```
 
 Then extend it in your `.eslintrc`:
@@ -80,13 +80,13 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-react]][lnk-npm-typescript-react]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-base
+npm i -DE eslint @ivangabriele/eslint-config-typescript-react
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-base
+yarn add -DE eslint @ivangabriele/eslint-config-typescript-react
 ```
 
 Then extend it in your `.eslintrc`:
@@ -105,13 +105,13 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-next]][lnk-npm-typescript-next]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-base
+npm i -DE eslint @ivangabriele/eslint-config-typescript-next
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-base
+yarn add -DE eslint @ivangabriele/eslint-config-typescript-next
 ```
 
 Then extend it in your `.eslintrc`:
