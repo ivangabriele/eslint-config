@@ -11,8 +11,13 @@ My most commonly used ESLint configurations.
 [![img-npm-base]][lnk-npm-base]
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-base
-npx install-peerdeps -D @ivangabriele/eslint-config-base
+npm i -DE eslint @ivangabriele/eslint-config-base
+```
+
+or:
+
+```sh
+yarn add -DE eslint @ivangabriele/eslint-config-base
 ```
 
 Then extend it in your `.eslintrc`:
@@ -28,8 +33,13 @@ Then extend it in your `.eslintrc`:
 [![img-npm-react]][lnk-npm-react]
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-react
-npx install-peerdeps -D @ivangabriele/eslint-config-react
+npm i -DE eslint @ivangabriele/eslint-config-base
+```
+
+or:
+
+```sh
+yarn add -DE eslint @ivangabriele/eslint-config-base
 ```
 
 Then extend it in your `.eslintrc`:
@@ -45,8 +55,13 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-base]][lnk-npm-typescript-base]
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-base
-npx install-peerdeps -D @ivangabriele/eslint-config-typescript-base
+npm i -DE eslint @ivangabriele/eslint-config-base
+```
+
+or:
+
+```sh
+yarn add -DE eslint @ivangabriele/eslint-config-base
 ```
 
 Then extend it in your `.eslintrc`:
@@ -65,8 +80,13 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-react]][lnk-npm-typescript-react]
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-react
-npx install-peerdeps -D @ivangabriele/eslint-config-typescript-react
+npm i -DE eslint @ivangabriele/eslint-config-base
+```
+
+or:
+
+```sh
+yarn add -DE eslint @ivangabriele/eslint-config-base
 ```
 
 Then extend it in your `.eslintrc`:
@@ -85,8 +105,13 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-next]][lnk-npm-typescript-next]
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-next
-npx install-peerdeps -D @ivangabriele/eslint-config-typescript-next
+npm i -DE eslint @ivangabriele/eslint-config-base
+```
+
+or:
+
+```sh
+yarn add -DE eslint @ivangabriele/eslint-config-base
 ```
 
 Then extend it in your `.eslintrc`:
@@ -145,7 +170,7 @@ to the remote repository.
 
 ---
 
-[img-github]: https://img.shields.io/github/workflow/status/ivangabriele/eslint-config/Test%20&%20Publish/main?style=flat-square
+[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/test-and-publish.yml?branch=main&style=flat-square
 [img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=flat-square
 [img-npm-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-base?style=flat-square
 [img-npm-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square

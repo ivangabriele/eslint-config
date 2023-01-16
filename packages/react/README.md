@@ -7,8 +7,13 @@ My most commonly used ESLint configuration for Javascript with React.
 ## Usage
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-react
-npx install-peerdeps -D @ivangabriele/eslint-config-react
+npm i -DE eslint @ivangabriele/eslint-config-react
+```
+
+or:
+
+```sh
+yarn add -DE eslint @ivangabriele/eslint-config-react
 ```
 
 Then extend it in your `.eslintrc`:
@@ -33,8 +38,7 @@ This is a monorepository, please check the [root readme][lnk-contribution].
 
 ---
 
-[img-github]:
-  https://img.shields.io/github/workflow/status/ivangabriele/eslint-config/Test%20&%20Publish/main?style=flat-square
+[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/test-and-publish.yml?branch=main&style=flat-square
 [img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=flat-square
 [img-npm]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square
 [lnk-github]: https://github.com/ivangabriele/eslint-config/actions?query=branch%3Amain++
