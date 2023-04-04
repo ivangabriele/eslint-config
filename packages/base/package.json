@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "eslint-config-airbnb-base": "15.0.0",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
     "eslint-plugin-jest": "27.2.1",
     "eslint-plugin-no-null": "1.0.2",
@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@ivangabriele/prettier-config": "3.1.0",
-    "eslint": "8.35.0"
+    "eslint": "8.37.0"
   },
   "peerDependencies": {
     "@ivangabriele/prettier-config": "^3.0.0",
