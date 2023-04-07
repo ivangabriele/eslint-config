@@ -28,6 +28,7 @@ module.exports = {
 
     'prettier/prettier': 'error',
 
+    'react/jsx-no-useless-fragment': 'off',
     'react/jsx-sort-props': 'error',
     'react/prop-types': 'off',
     'react/react-in-jsx-scope': 'off',
