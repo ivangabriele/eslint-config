@@ -7,13 +7,49 @@ My most commonly used ESLint configuration for Typescript with Next.js.
 ## Usage
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-typescript-next
+npm i -DE @ivangabriele/eslint-config-typescript-next \
+  @ivangabriele/prettier-config@3 \
+  @typescript-eslint/eslint-plugin@5 \
+  @typescript-eslint/parser@5 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-airbnb-typescript@17 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-jsx-a11y@6 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-react@7 \
+  eslint-plugin-react-hooks@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1 \
+  eslint-plugin-typescript-sort-keys@2 \
+  typescript@5
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-typescript-next
+yarn add -DE @ivangabriele/eslint-config-typescript-next \
+  @ivangabriele/prettier-config@3 \
+  @typescript-eslint/eslint-plugin@5 \
+  @typescript-eslint/parser@5 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-airbnb-typescript@17 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-jsx-a11y@6 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-react@7 \
+  eslint-plugin-react-hooks@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1 \
+  eslint-plugin-typescript-sort-keys@2 \
+  typescript@5
 ```
 
 Then extend it in your `.eslintrc`:

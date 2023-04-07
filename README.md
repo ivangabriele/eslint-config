@@ -4,6 +4,23 @@
 
 My most commonly used ESLint configurations.
 
+---
+
+- [Usage](#usage)
+  - [Javascript (without React)](#javascript-without-react)
+  - [Javascript with React](#javascript-with-react)
+  - [Typescript (without React)](#typescript-without-react)
+  - [Typescript with React](#typescript-with-react)
+  - [Typescript with Next.js](#typescript-with-nextjs)
+  - [With Yarn Plug'n'Play](#with-yarn-plugnplay)
+    - [Visual Studio Code](#visual-studio-code)
+- [Contribution](#contribution)
+  - [Getting Started](#getting-started)
+  - [Releasing](#releasing)
+  - [Recommended IDE Settings](#recommended-ide-settings)
+
+---
+
 ## Usage
 
 ### Javascript (without React)
@@ -11,13 +28,33 @@ My most commonly used ESLint configurations.
 [![img-npm-base]][lnk-npm-base]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-base
+npm i -DE @ivangabriele/eslint-config-base \
+  @ivangabriele/prettier-config@3 \
+  eslint-config-airbnb-base@8 \
+  eslint-config-airbnb-base@15 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-base
+yarn add -DE @ivangabriele/eslint-config-base \
+  @ivangabriele/prettier-config@3 \
+  eslint-config-airbnb-base@8 \
+  eslint-config-airbnb-base@15 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1
 ```
 
 Then extend it in your `.eslintrc`:
@@ -33,13 +70,39 @@ Then extend it in your `.eslintrc`:
 [![img-npm-react]][lnk-npm-react]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-react
+npm i -DE @ivangabriele/eslint-config-react \
+  @ivangabriele/prettier-config@3 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-jsx-a11y@6 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-react@7 \
+  eslint-plugin-react-hooks@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-react
+yarn add -DE @ivangabriele/eslint-config-react \
+  @ivangabriele/prettier-config@3 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-jsx-a11y@6 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-react@7 \
+  eslint-plugin-react-hooks@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1
 ```
 
 Then extend it in your `.eslintrc`:
@@ -55,13 +118,43 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-base]][lnk-npm-typescript-base]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-typescript-base
+npm i -DE @ivangabriele/eslint-config-typescript-base \
+  @ivangabriele/prettier-config@3 \
+  @typescript-eslint/eslint-plugin@5 \
+  @typescript-eslint/parser@5 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-airbnb-typescript@17 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1 \
+  eslint-plugin-typescript-sort-keys@2 \
+  typescript@5
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-typescript-base
+yarn add -DE @ivangabriele/eslint-config-typescript-base \
+  @ivangabriele/prettier-config@3 \
+  @typescript-eslint/eslint-plugin@5 \
+  @typescript-eslint/parser@5 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-airbnb-typescript@17 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1 \
+  eslint-plugin-typescript-sort-keys@2 \
+  typescript@5
 ```
 
 Then extend it in your `.eslintrc`:
@@ -80,13 +173,49 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-react]][lnk-npm-typescript-react]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-typescript-react
+npm i -DE @ivangabriele/eslint-config-typescript-react \
+  @ivangabriele/prettier-config@3 \
+  @typescript-eslint/eslint-plugin@5 \
+  @typescript-eslint/parser@5 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-airbnb-typescript@17 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-jsx-a11y@6 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-react@7 \
+  eslint-plugin-react-hooks@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1 \
+  eslint-plugin-typescript-sort-keys@2 \
+  typescript@5
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-typescript-react
+yarn add -DE @ivangabriele/eslint-config-typescript-react \
+  @ivangabriele/prettier-config@3 \
+  @typescript-eslint/eslint-plugin@5 \
+  @typescript-eslint/parser@5 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-airbnb-typescript@17 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-jsx-a11y@6 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-react@7 \
+  eslint-plugin-react-hooks@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1 \
+  eslint-plugin-typescript-sort-keys@2 \
+  typescript@5
 ```
 
 Then extend it in your `.eslintrc`:
@@ -105,13 +234,49 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-next]][lnk-npm-typescript-next]
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-typescript-next
+npm i -DE @ivangabriele/eslint-config-typescript-next \
+  @ivangabriele/prettier-config@3 \
+  @typescript-eslint/eslint-plugin@5 \
+  @typescript-eslint/parser@5 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-airbnb-typescript@17 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-jsx-a11y@6 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-react@7 \
+  eslint-plugin-react-hooks@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1 \
+  eslint-plugin-typescript-sort-keys@2 \
+  typescript@5
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-typescript-next
+yarn add -DE @ivangabriele/eslint-config-typescript-next \
+  @ivangabriele/prettier-config@3 \
+  @typescript-eslint/eslint-plugin@5 \
+  @typescript-eslint/parser@5 \
+  eslint@8 \
+  eslint-config-airbnb@19 \
+  eslint-config-airbnb-typescript@17 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-jsx-a11y@6 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-react@7 \
+  eslint-plugin-react-hooks@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1 \
+  eslint-plugin-typescript-sort-keys@2 \
+  typescript@5
 ```
 
 Then extend it in your `.eslintrc`:
