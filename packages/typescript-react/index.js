@@ -38,6 +38,7 @@ module.exports = {
     'sort-keys-fix/sort-keys-fix': ['error', 'asc', { caseSensitive: false, natural: false }],
 
     '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    '@typescript-eslint/no-use-before-define': 'off',
 
     'typescript-sort-keys/interface': 'error',
     'typescript-sort-keys/string-enum': 'error',
