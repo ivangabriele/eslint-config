@@ -7,13 +7,33 @@ My most commonly used ESLint configuration for Javascript (without React).
 ## Usage
 
 ```sh
-npm i -DE eslint @ivangabriele/eslint-config-base
+npm i -DE @ivangabriele/eslint-config-base \
+  @ivangabriele/prettier-config@3 \
+  eslint-config-airbnb-base@8 \
+  eslint-config-airbnb-base@15 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1
 ```
 
 or:
 
 ```sh
-yarn add -DE eslint @ivangabriele/eslint-config-base
+yarn add -DE @ivangabriele/eslint-config-base \
+  @ivangabriele/prettier-config@3 \
+  eslint-config-airbnb-base@8 \
+  eslint-config-airbnb-base@15 \
+  eslint-config-prettier@8 \
+  eslint-plugin-import@2 \
+  eslint-plugin-jest@27 \
+  eslint-plugin-no-null@1 \
+  eslint-plugin-prettier@4 \
+  eslint-plugin-sort-destructure-keys@1 \
+  eslint-plugin-sort-keys-fix@1
 ```
 
 Then extend it in your `.eslintrc`:
