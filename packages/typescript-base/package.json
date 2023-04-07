@@ -2,7 +2,7 @@
   "name": "@ivangabriele/eslint-config-typescript-base",
   "description": "My most commonly used ESLint configuration for Typescript (without React).",
   "license": "MIT",
-  "version": "7.0.0",
+  "version": "7.1.0",
   "main": "./index.js",
   "scripts": {
     "test": "npm run test:unit",
