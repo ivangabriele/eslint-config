@@ -28,7 +28,7 @@ My most commonly used ESLint configurations.
 [![img-npm-base]][lnk-npm-base]
 
 ```sh
-npm i -DE @ivangabriele/eslint-config-base \
+npm i -D @ivangabriele/eslint-config-base \
   @ivangabriele/prettier-config@3 \
   eslint-config-airbnb-base@8 \
   eslint-config-airbnb-base@15 \
@@ -44,7 +44,7 @@ npm i -DE @ivangabriele/eslint-config-base \
 or:
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-base \
+yarn add -D @ivangabriele/eslint-config-base \
   @ivangabriele/prettier-config@3 \
   eslint-config-airbnb-base@8 \
   eslint-config-airbnb-base@15 \
@@ -70,7 +70,7 @@ Then extend it in your `.eslintrc`:
 [![img-npm-react]][lnk-npm-react]
 
 ```sh
-npm i -DE @ivangabriele/eslint-config-react \
+npm i -D @ivangabriele/eslint-config-react \
   @ivangabriele/prettier-config@3 \
   eslint@8 \
   eslint-config-airbnb@19 \
@@ -89,7 +89,7 @@ npm i -DE @ivangabriele/eslint-config-react \
 or:
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-react \
+yarn add -D @ivangabriele/eslint-config-react \
   @ivangabriele/prettier-config@3 \
   eslint@8 \
   eslint-config-airbnb@19 \
@@ -118,7 +118,7 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-base]][lnk-npm-typescript-base]
 
 ```sh
-npm i -DE @ivangabriele/eslint-config-typescript-base \
+npm i -D @ivangabriele/eslint-config-typescript-base \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
@@ -139,7 +139,7 @@ npm i -DE @ivangabriele/eslint-config-typescript-base \
 or:
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-base \
+yarn add -D @ivangabriele/eslint-config-typescript-base \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
@@ -173,7 +173,7 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-react]][lnk-npm-typescript-react]
 
 ```sh
-npm i -DE @ivangabriele/eslint-config-typescript-react \
+npm i -D @ivangabriele/eslint-config-typescript-react \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
@@ -197,7 +197,7 @@ npm i -DE @ivangabriele/eslint-config-typescript-react \
 or:
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-react \
+yarn add -D @ivangabriele/eslint-config-typescript-react \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
@@ -234,7 +234,7 @@ Then extend it in your `.eslintrc`:
 [![img-npm-typescript-next]][lnk-npm-typescript-next]
 
 ```sh
-npm i -DE @ivangabriele/eslint-config-typescript-next \
+npm i -D @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
@@ -258,7 +258,7 @@ npm i -DE @ivangabriele/eslint-config-typescript-next \
 or:
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-next \
+yarn add -D @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \

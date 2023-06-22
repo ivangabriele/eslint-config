@@ -7,7 +7,7 @@ My most commonly used ESLint configuration for Typescript (without React).
 ## Usage
 
 ```sh
-npm i -DE @ivangabriele/eslint-config-typescript-base \
+npm i -D @ivangabriele/eslint-config-typescript-base \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
@@ -28,7 +28,7 @@ npm i -DE @ivangabriele/eslint-config-typescript-base \
 or:
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-base \
+yarn add -D @ivangabriele/eslint-config-typescript-base \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
