@@ -7,7 +7,7 @@ My most commonly used ESLint configuration for Javascript with React.
 ## Usage
 
 ```sh
-npm i -DE @ivangabriele/eslint-config-react \
+npm i -D @ivangabriele/eslint-config-react \
   @ivangabriele/prettier-config@3 \
   eslint@8 \
   eslint-config-airbnb@19 \
@@ -26,7 +26,7 @@ npm i -DE @ivangabriele/eslint-config-react \
 or:
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-react \
+yarn add -D @ivangabriele/eslint-config-react \
   @ivangabriele/prettier-config@3 \
   eslint@8 \
   eslint-config-airbnb@19 \

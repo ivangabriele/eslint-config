@@ -7,7 +7,7 @@ My most commonly used ESLint configuration for Typescript with Next.js.
 ## Usage
 
 ```sh
-npm i -DE @ivangabriele/eslint-config-typescript-next \
+npm i -D @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
@@ -31,7 +31,7 @@ npm i -DE @ivangabriele/eslint-config-typescript-next \
 or:
 
 ```sh
-yarn add -DE @ivangabriele/eslint-config-typescript-next \
+yarn add -D @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config@3 \
   @typescript-eslint/eslint-plugin@5 \
   @typescript-eslint/parser@5 \
