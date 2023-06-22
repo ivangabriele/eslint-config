@@ -1,8 +1,5 @@
 module.exports = {
   extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
-  parserOptions: {
-    extraFileExtensions: ['.cjs'],
-  },
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys', 'no-null'],
   rules: {
     curly: ['error', 'all'],
