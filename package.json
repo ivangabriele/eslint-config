@@ -6,7 +6,7 @@
   "private": true,
   "engines": {
     "node": ">=16",
-    "npm": "9"
+    "npm": "10"
   },
   "scripts": {
     "prepare": "husky install",
