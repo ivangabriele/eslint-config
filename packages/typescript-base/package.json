@@ -10,7 +10,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@ivangabriele/prettier-config": "3.1.0",
+    "@ivangabriele/prettier-config": "4.0.1",
     "@typescript-eslint/eslint-plugin": "6.16.0",
     "@typescript-eslint/parser": "6.16.0",
     "eslint": "8.56.0",
@@ -27,7 +27,7 @@
     "typescript": "5.3.3"
   },
   "peerDependencies": {
-    "@ivangabriele/prettier-config": "^3.0.0",
+    "@ivangabriele/prettier-config": "^4.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.0.0",
