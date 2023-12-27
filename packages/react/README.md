@@ -8,38 +8,40 @@ My most commonly used ESLint configuration for Javascript with React.
 
 ```sh
 npm i -D @ivangabriele/eslint-config-react \
-  @ivangabriele/prettier-config@3 \
+  @ivangabriele/prettier-config@4 \
   eslint@8 \
   eslint-config-airbnb@19 \
-  eslint-config-prettier@8 \
+  eslint-config-prettier@9 \
   eslint-plugin-import@2 \
   eslint-plugin-jest@27 \
   eslint-plugin-jsx-a11y@6 \
   eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@4 \
+  eslint-plugin-prettier@5 \
   eslint-plugin-react@7 \
   eslint-plugin-react-hooks@4 \
   eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1
+  eslint-plugin-sort-keys-fix@1 \
+  prettier@3
 ```
 
 or:
 
 ```sh
 yarn add -D @ivangabriele/eslint-config-react \
-  @ivangabriele/prettier-config@3 \
+  @ivangabriele/prettier-config@4 \
   eslint@8 \
   eslint-config-airbnb@19 \
-  eslint-config-prettier@8 \
+  eslint-config-prettier@9 \
   eslint-plugin-import@2 \
   eslint-plugin-jest@27 \
   eslint-plugin-jsx-a11y@6 \
   eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@4 \
+  eslint-plugin-prettier@5 \
   eslint-plugin-react@7 \
   eslint-plugin-react-hooks@4 \
   eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1
+  eslint-plugin-sort-keys-fix@1 \
+  prettier@3
 ```
 
 Then extend it in your `.eslintrc`:

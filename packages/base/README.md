@@ -8,32 +8,34 @@ My most commonly used ESLint configuration for Javascript (without React).
 
 ```sh
 npm i -D @ivangabriele/eslint-config-base \
-  @ivangabriele/prettier-config@3 \
+  @ivangabriele/prettier-config@4 \
   eslint-config-airbnb-base@8 \
   eslint-config-airbnb-base@15 \
-  eslint-config-prettier@8 \
+  eslint-config-prettier@9 \
   eslint-plugin-import@2 \
   eslint-plugin-jest@27 \
   eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@4 \
+  eslint-plugin-prettier@5 \
   eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1
+  eslint-plugin-sort-keys-fix@1 \
+  prettier@3
 ```
 
 or:
 
 ```sh
 yarn add -D @ivangabriele/eslint-config-base \
-  @ivangabriele/prettier-config@3 \
+  @ivangabriele/prettier-config@4 \
   eslint-config-airbnb-base@8 \
   eslint-config-airbnb-base@15 \
-  eslint-config-prettier@8 \
+  eslint-config-prettier@9 \
   eslint-plugin-import@2 \
   eslint-plugin-jest@27 \
   eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@4 \
+  eslint-plugin-prettier@5 \
   eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1
+  eslint-plugin-sort-keys-fix@1 \
+  prettier@3
 ```
 
 Then extend it in your `.eslintrc`:
