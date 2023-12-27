@@ -14,10 +14,7 @@ My most commonly used ESLint configurations.
   - [Typescript with Next.js](#typescript-with-nextjs)
   - [With Yarn Plug'n'Play](#with-yarn-plugnplay)
     - [Visual Studio Code](#visual-studio-code)
-- [Contribution](#contribution)
-  - [Getting Started](#getting-started)
-  - [Releasing](#releasing)
-  - [Recommended IDE Settings](#recommended-ide-settings)
+- [Contribute](#contribute)
 
 ---
 
@@ -308,40 +305,9 @@ Then extend it in your `.eslintrc`:
 yarn dlx @yarnpkg/sdks vscode
 ```
 
-## Contribution
+## Contribute
 
-### Getting Started
-
-```sh
-npm i
-```
-
-### Releasing
-
-```sh
-npm version major|minor|patch
-```
-
-This will automatically create a full tagged commit with packages version bump in a version branch before pushing them
-to the remote repository.
-
-### Recommended IDE Settings
-
-```json
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "eslint.codeActionsOnSave.mode": "all",
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "eslint.format.enable": true,
-  "editor.formatOnSave": true,
-  "eslint.packageManager": "npm",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
-}
-```
+Please check the [contributing documentation](CONTRIBUTING.md).
 
 ---
 
