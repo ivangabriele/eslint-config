@@ -8,40 +8,40 @@ My most commonly used ESLint configuration for Javascript with React.
 
 ```sh
 npm i -D @ivangabriele/eslint-config-react \
-  @ivangabriele/prettier-config@4 \
-  eslint@8 \
-  eslint-config-airbnb@19 \
-  eslint-config-prettier@9 \
-  eslint-plugin-import@2 \
-  eslint-plugin-jest@27 \
-  eslint-plugin-jsx-a11y@6 \
-  eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@5 \
-  eslint-plugin-react@7 \
-  eslint-plugin-react-hooks@4 \
-  eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1 \
-  prettier@3
+  @ivangabriele/prettier-config \
+  eslint \
+  eslint-config-airbnb \
+  eslint-config-prettier \
+  eslint-plugin-import \
+  eslint-plugin-jest \
+  eslint-plugin-jsx-a11y \
+  eslint-plugin-no-null \
+  eslint-plugin-prettier \
+  eslint-plugin-react \
+  eslint-plugin-react-hooks \
+  eslint-plugin-sort-destructure-keys \
+  eslint-plugin-sort-keys-fix \
+  prettier
 ```
 
 or:
 
 ```sh
 yarn add -D @ivangabriele/eslint-config-react \
-  @ivangabriele/prettier-config@4 \
-  eslint@8 \
-  eslint-config-airbnb@19 \
-  eslint-config-prettier@9 \
-  eslint-plugin-import@2 \
-  eslint-plugin-jest@27 \
-  eslint-plugin-jsx-a11y@6 \
-  eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@5 \
-  eslint-plugin-react@7 \
-  eslint-plugin-react-hooks@4 \
-  eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1 \
-  prettier@3
+  @ivangabriele/prettier-config \
+  eslint \
+  eslint-config-airbnb \
+  eslint-config-prettier \
+  eslint-plugin-import \
+  eslint-plugin-jest \
+  eslint-plugin-jsx-a11y \
+  eslint-plugin-no-null \
+  eslint-plugin-prettier \
+  eslint-plugin-react \
+  eslint-plugin-react-hooks \
+  eslint-plugin-sort-destructure-keys \
+  eslint-plugin-sort-keys-fix \
+  prettier
 ```
 
 Then extend it in your `.eslintrc`:
@@ -49,6 +49,15 @@ Then extend it in your `.eslintrc`:
 ```json
 {
   "extends": "@ivangabriele/eslint-config-react"
+}
+```
+
+And add this line to your package.json:
+
+```json
+{
+  // ...
+  "prettier": "@ivangabriele/prettier-config"
 }
 ```
 
