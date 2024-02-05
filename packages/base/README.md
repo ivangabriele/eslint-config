@@ -8,34 +8,34 @@ My most commonly used ESLint configuration for Javascript (without React).
 
 ```sh
 npm i -D @ivangabriele/eslint-config-base \
-  @ivangabriele/prettier-config@4 \
-  eslint-config-airbnb-base@8 \
-  eslint-config-airbnb-base@15 \
-  eslint-config-prettier@9 \
-  eslint-plugin-import@2 \
-  eslint-plugin-jest@27 \
-  eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@5 \
-  eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1 \
-  prettier@3
+  @ivangabriele/prettier-config \
+  eslint-config-airbnb-base \
+  eslint-config-airbnb-base \
+  eslint-config-prettier \
+  eslint-plugin-import \
+  eslint-plugin-jest \
+  eslint-plugin-no-null \
+  eslint-plugin-prettier \
+  eslint-plugin-sort-destructure-keys \
+  eslint-plugin-sort-keys-fix \
+  prettier
 ```
 
 or:
 
 ```sh
 yarn add -D @ivangabriele/eslint-config-base \
-  @ivangabriele/prettier-config@4 \
-  eslint-config-airbnb-base@8 \
-  eslint-config-airbnb-base@15 \
-  eslint-config-prettier@9 \
-  eslint-plugin-import@2 \
-  eslint-plugin-jest@27 \
-  eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@5 \
-  eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1 \
-  prettier@3
+  @ivangabriele/prettier-config \
+  eslint-config-airbnb-base \
+  eslint-config-airbnb-base \
+  eslint-config-prettier \
+  eslint-plugin-import \
+  eslint-plugin-jest \
+  eslint-plugin-no-null \
+  eslint-plugin-prettier \
+  eslint-plugin-sort-destructure-keys \
+  eslint-plugin-sort-keys-fix \
+  prettier
 ```
 
 Then extend it in your `.eslintrc`:
@@ -43,6 +43,15 @@ Then extend it in your `.eslintrc`:
 ```json
 {
   "extends": "@ivangabriele/eslint-config-base"
+}
+```
+
+And add this line to your package.json:
+
+```json
+{
+  // ...
+  "prettier": "@ivangabriele/prettier-config"
 }
 ```
 

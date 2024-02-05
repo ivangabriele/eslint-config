@@ -8,50 +8,51 @@ My most commonly used ESLint configuration for Typescript with Next.js.
 
 ```sh
 npm i -D @ivangabriele/eslint-config-typescript-next \
-  @ivangabriele/prettier-config@4 \
-  @typescript-eslint/eslint-plugin@6 \
-  @typescript-eslint/parser@6 \
-  eslint@8 \
-  eslint-config-airbnb@19 \
-  eslint-config-airbnb-typescript@17 \
-  eslint-config-prettier@9 \
-  eslint-plugin-import@2 \
-  eslint-plugin-jest@27 \
-  eslint-plugin-jsx-a11y@6 \
-  eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@5 \
-  eslint-plugin-react@7 \
-  eslint-plugin-react-hooks@4 \
-  eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1 \
-  eslint-plugin-typescript-sort-keys@3 \
-  prettier@3 \
-  typescript@5
+  @ivangabriele/prettier-config \
+  @next/eslint-plugin-next \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint \
+  eslint-config-airbnb \
+  eslint-config-airbnb-typescript \
+  eslint-config-prettier \
+  eslint-plugin-import \
+  eslint-plugin-jest \
+  eslint-plugin-jsx-a11y \
+  eslint-plugin-no-null \
+  eslint-plugin-prettier \
+  eslint-plugin-react \
+  eslint-plugin-react-hooks \
+  eslint-plugin-sort-destructure-keys \
+  eslint-plugin-sort-keys-fix \
+  eslint-plugin-typescript-sort-keys \
+  prettier \
+  typescript
 ```
 
 or:
 
 ```sh
 yarn add -D @ivangabriele/eslint-config-typescript-next \
-  @ivangabriele/prettier-config@4 \
-  @typescript-eslint/eslint-plugin@6 \
-  @typescript-eslint/parser@6 \
-  eslint@8 \
-  eslint-config-airbnb@19 \
-  eslint-config-airbnb-typescript@17 \
-  eslint-config-prettier@9 \
-  eslint-plugin-import@2 \
-  eslint-plugin-jest@27 \
-  eslint-plugin-jsx-a11y@6 \
-  eslint-plugin-no-null@1 \
-  eslint-plugin-prettier@5 \
-  eslint-plugin-react@7 \
-  eslint-plugin-react-hooks@4 \
-  eslint-plugin-sort-destructure-keys@1 \
-  eslint-plugin-sort-keys-fix@1 \
-  eslint-plugin-typescript-sort-keys@3 \
-  prettier@3 \
-  typescript@5
+  @ivangabriele/prettier-config \
+  @typescript-eslint/eslint-plugin \
+  @typescript-eslint/parser \
+  eslint \
+  eslint-config-airbnb \
+  eslint-config-airbnb-typescript \
+  eslint-config-prettier \
+  eslint-plugin-import \
+  eslint-plugin-jest \
+  eslint-plugin-jsx-a11y \
+  eslint-plugin-no-null \
+  eslint-plugin-prettier \
+  eslint-plugin-react \
+  eslint-plugin-react-hooks \
+  eslint-plugin-sort-destructure-keys \
+  eslint-plugin-sort-keys-fix \
+  eslint-plugin-typescript-sort-keys \
+  prettier \
+  typescript
 ```
 
 Then extend it in your `.eslintrc`:
@@ -62,6 +63,15 @@ Then extend it in your `.eslintrc`:
   "parserOptions": {
     "project": "./tsconfig.json"
   }
+}
+```
+
+And add this line to your package.json:
+
+```json
+{
+  // ...
+  "prettier": "@ivangabriele/prettier-config"
 }
 ```
 

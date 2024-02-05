@@ -1,6 +1,14 @@
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript', 'prettier'],
-  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys', 'no-null'],
+  // https://nextjs.org/docs/pages/building-your-application/configuring/eslint#migrating-existing-config
+  extends: ['plugin:@next/next/recommended', 'prettier'],
+  plugins: [
+    '@next/eslint-plugin-next',
+    'prettier',
+    'sort-keys-fix',
+    'sort-destructure-keys',
+    'typescript-sort-keys',
+    'no-null',
+  ],
   ignorePatterns: ['/.next/', '/.yarn/', 'next-env.d.ts'],
   rules: {
     curly: ['error', 'all'],
@@ -42,36 +50,36 @@ module.exports = {
     'typescript-sort-keys/string-enum': 'error',
   },
   overrides: [
-    {
-      files: [
-        './app/**/*.js',
-        './app/**/*.jsx',
-        './common/**/*.js',
-        './pages/**/*.jsx',
-        './app/**/*.ts',
-        './app/**/*.tsx',
-        './common/**/*.ts',
-        './pages/**/*.tsx',
-      ],
-      env: {
-        browser: true,
-        node: true,
-      },
-    },
-    {
-      files: ['./api/**/*.js', './pages/**/*.js', './api/**/*.ts', './pages/**/*.ts'],
-      env: {
-        browser: false,
-        node: true,
-      },
-    },
-    {
-      files: ['./pages/**/*.js', './pages/**/*.jsx', './pages/**/*.ts', './pages/**/*.tsx'],
-      rules: {
-        'import/no-default-export': 'off',
-        'import/prefer-default-export': 'error',
-      },
-    },
+    // {
+    //   files: [
+    //     './app/**/*.js',
+    //     './app/**/*.jsx',
+    //     './common/**/*.js',
+    //     './pages/**/*.jsx',
+    //     './app/**/*.ts',
+    //     './app/**/*.tsx',
+    //     './common/**/*.ts',
+    //     './pages/**/*.tsx',
+    //   ],
+    //   env: {
+    //     browser: true,
+    //     node: true,
+    //   },
+    // },
+    // {
+    //   files: ['./api/**/*.js', './pages/**/*.js', './api/**/*.ts', './pages/**/*.ts'],
+    //   env: {
+    //     browser: false,
+    //     node: true,
+    //   },
+    // },
+    // {
+    //   files: ['./pages/**/*.js', './pages/**/*.jsx', './pages/**/*.ts', './pages/**/*.tsx'],
+    //   rules: {
+    //     'import/no-default-export': 'off',
+    //     'import/prefer-default-export': 'error',
+    //   },
+    // },
     {
       files: ['**/*.test.js', '**/*.test.jsx', '**/*.test.ts', '**/*.test.tsx'],
       plugins: ['jest'],
