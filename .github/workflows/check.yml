@@ -20,3 +20,18 @@ jobs:
         run: npm run test:lint
       - name: Unit Test
         run: npm run test:unit
+      - name: Is it a tag?
+        id: tag_check
+        run: |
+          if [[ ${{ github.ref }} == refs/tags/* ]]; then
+            echo "is_tag=true" >> $GITHUB_ENV
+          else
+            echo "is_tag=false" >> $GITHUB_ENV
+          fi
+      - name: Create is_tag file
+        run: echo ${{ env.is_tag }} > is_tag.txt
+      - name: Upload is_tag artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: is_tag
+          path: is_tag.txt

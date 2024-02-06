@@ -10,26 +10,38 @@ on:
 jobs:
   release:
     name: Release
-    if: ${{ contains(github.ref, 'refs/tags/') && github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
+      - name: Download is_tag artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: is_tag
+      - name: Read is_tag value
+        id: read_is_tag
+        run: echo "is_tag=$(cat is_tag.txt)" >> $GITHUB_ENV
       - name: Checkout
+        if: env.is_tag == 'true'
         uses: actions/checkout@v4
       - name: Setup
+        if: env.is_tag == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: 'https://registry.npmjs.org'
       - name: Publish to NPM
+        if: env.is_tag == 'true'
         run: npm publish --access=public --workspaces
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Setup (Github)
+        if: env.is_tag == 'true'
         uses: actions/setup-node@v4
         with:
           node-version: 20
           registry-url: 'https://npm.pkg.github.com'
       - name: Publish to Github
+        if: env.is_tag == 'true'
         run: npm publish --access=public --workspaces
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
