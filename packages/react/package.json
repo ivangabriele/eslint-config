@@ -2,7 +2,7 @@
   "name": "@ivangabriele/eslint-config-react",
   "description": "My most commonly used ESLint configuration for Javascript with React.",
   "license": "MIT",
-  "version": "8.0.1",
+  "version": "9.0.0",
   "type": "module",
   "main": "./index.cjs",
   "engines": {
