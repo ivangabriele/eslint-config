@@ -26,6 +26,8 @@ jobs:
       - name: Checkout
         if: env.is_tag == 'true'
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_commit.id }}
       - name: Setup
         if: env.is_tag == 'true'
         uses: actions/setup-node@v4
