@@ -12,7 +12,6 @@ on:
 jobs:
   release:
     name: Release
-    needs: test
     if: ${{ contains(github.ref, 'refs/tags/') && github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     steps:
