@@ -1,7 +1,9 @@
-const { ESLint } = require('eslint')
-const fs = require('fs')
+import { jest } from '@jest/globals'
+import { ESLint } from 'eslint'
+import { getAbsolutePath } from 'esm-path'
+import fs from 'fs'
 
-const eslintConfig = require('.')
+import eslintConfig from './index.cjs'
 
 describe('@ivangabriele/eslint-config-typescript-react', () => {
   let results
@@ -18,7 +20,7 @@ describe('@ivangabriele/eslint-config-typescript-react', () => {
       },
     })
 
-    fs.writeFileSync(`${__dirname}/sample.ts`, `const foo = "bar"\n`)
+    fs.writeFileSync(getAbsolutePath(import.meta.url, 'sample.ts'), `const foo = "bar"\n`)
     results = await eslint.lintFiles('./sample.ts')
   })
 

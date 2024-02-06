@@ -1,6 +1,7 @@
-const { ESLint } = require('eslint')
+import { jest } from '@jest/globals'
+import { ESLint } from 'eslint'
 
-const eslintConfig = require('.')
+import eslintConfig from '.'
 
 describe('@ivangabriele/eslint-config-react', () => {
   let results

@@ -1,0 +1,22 @@
+name: Check
+
+on: push
+
+jobs:
+  check:
+    name: Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup
+        uses: actions/setup-node@v4
+        with:
+          cache: npm
+          node-version: 20
+      - name: Install
+        run: npm ci
+      - name: Lint
+        run: npm run test:lint
+      - name: Unit Test
+        run: npm run test:unit

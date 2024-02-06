@@ -1,6 +1,6 @@
-const { ESLint } = require('eslint')
+import { ESLint } from 'eslint'
 
-const eslintConfig = require('.')
+import eslintConfig from '.'
 
 describe('@ivangabriele/eslint-config-base', () => {
   let results
