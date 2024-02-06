@@ -2,7 +2,7 @@
   "name": "@ivangabriele/eslint-config-typescript-next",
   "description": "My most commonly used ESLint configuration for Typescript with Next.js.",
   "license": "MIT",
-  "version": "9.0.0",
+  "version": "9.0.1",
   "type": "module",
   "main": "./index.cjs",
   "engines": {
