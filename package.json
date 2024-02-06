@@ -2,7 +2,7 @@
   "name": "@ivangabriele/eslint-config",
   "description": "My most commonly used ESLint configurations.",
   "license": "MIT",
-  "version": "9.0.4",
+  "version": "9.0.5",
   "type": "module",
   "private": true,
   "engines": {
