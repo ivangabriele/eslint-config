@@ -2,7 +2,7 @@
   "name": "@ivangabriele/eslint-config-base",
   "description": "My most commonly used ESLint configuration for Javascript (without React).",
   "license": "MIT",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "type": "module",
   "main": "./index.cjs",
   "engines": {
