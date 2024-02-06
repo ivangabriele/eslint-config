@@ -357,8 +357,8 @@ Please check the [contributing documentation](CONTRIBUTING.md).
 
 ---
 
-[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/check.yml?branch=main&style=flat-square
-[img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=flat-square
+[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/check.yml?branch=main&style=for-the-badge
+[img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=for-the-badge
 [img-npm-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-base?style=flat-square
 [img-npm-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square
 [img-npm-typescript-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-base?style=flat-square
