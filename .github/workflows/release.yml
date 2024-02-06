@@ -14,9 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download is_tag artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           name: is_tag
+          repository: ivangabriele/eslint-config
+          run-id: ${{ github.event.workflow_run.id }}
       - name: Read is_tag value
         id: read_is_tag
         run: echo "is_tag=$(cat is_tag.txt)" >> $GITHUB_ENV
