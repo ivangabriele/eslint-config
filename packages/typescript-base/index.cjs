@@ -1,9 +1,9 @@
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'prettier'],
-  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'no-null'],
+  extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
+  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys', 'no-null'],
   rules: {
     curly: ['error', 'all'],
-    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'newline-before-return': 'error',
     'no-console': 'error',
 
@@ -25,19 +25,19 @@ module.exports = {
 
     'prettier/prettier': 'error',
 
-    'react/jsx-no-useless-fragment': 'off',
-    'react/jsx-sort-props': 'error',
-    'react/prop-types': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'react/require-default-props': 'off',
-
     'sort-destructure-keys/sort-destructure-keys': ['error', { caseSensitive: false }],
 
     'sort-keys-fix/sort-keys-fix': ['error', 'asc', { caseSensitive: false, natural: false }],
+
+    '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
+    '@typescript-eslint/no-use-before-define': 'off',
+
+    'typescript-sort-keys/interface': 'error',
+    'typescript-sort-keys/string-enum': 'error',
   },
   overrides: [
     {
-      files: ['**/*.test.js'],
+      files: ['**/*.test.js', '**/*.test.ts'],
       plugins: ['jest'],
       env: {
         browser: false,
@@ -53,7 +53,18 @@ module.exports = {
       },
     },
     {
-      files: ['**/*.spec.js', '**/*.test.js', './*.cjs', './*.js', './config/*.js', './scripts/*.js'],
+      files: [
+        '**/*.spec.js',
+        '**/*.test.js',
+        './*.cjs',
+        './*.js',
+        './config/**/*.js',
+        './scripts/**/*.js',
+        '**/*.spec.ts',
+        '**/*.test.ts',
+        './config/**/*.ts',
+        './scripts/**/*.ts',
+      ],
       rules: {
         'import/no-extraneous-dependencies': [
           'error',

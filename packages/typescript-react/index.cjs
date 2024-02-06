@@ -1,5 +1,6 @@
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
-  extends: ['airbnb-base', 'airbnb-typescript/base', 'prettier'],
+  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript', 'prettier'],
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys', 'no-null'],
   rules: {
     curly: ['error', 'all'],
@@ -24,6 +25,12 @@ module.exports = {
 
     'prettier/prettier': 'error',
 
+    'react/jsx-no-useless-fragment': 'off',
+    'react/jsx-sort-props': 'error',
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'react/require-default-props': 'off',
+
     'sort-destructure-keys/sort-destructure-keys': ['error', { caseSensitive: false }],
 
     'sort-keys-fix/sort-keys-fix': ['error', 'asc', { caseSensitive: false, natural: false }],
@@ -36,12 +43,10 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.test.js', '**/*.test.ts'],
+      files: ['**/*.test.js', '**/*.test.jsx', '**/*.test.ts', '**/*.test.tsx'],
       plugins: ['jest'],
       env: {
-        browser: false,
         jest: true,
-        node: true,
       },
       rules: {
         'jest/no-disabled-tests': 'error',
@@ -55,12 +60,14 @@ module.exports = {
       files: [
         '**/*.spec.js',
         '**/*.test.js',
+        '**/*.test.jsx',
         './*.cjs',
         './*.js',
         './config/**/*.js',
         './scripts/**/*.js',
         '**/*.spec.ts',
         '**/*.test.ts',
+        '**/*.test.tsx',
         './config/**/*.ts',
         './scripts/**/*.ts',
       ],
@@ -71,6 +78,22 @@ module.exports = {
             devDependencies: true,
           },
         ],
+      },
+    },
+    {
+      files: [
+        '**/*.spec.js',
+        './*.cjs',
+        './*.js',
+        './config/**/*.js',
+        './scripts/**/*.js',
+        '**/*.spec.ts',
+        './config/**/*.ts',
+        './scripts/**/*.ts',
+      ],
+      env: {
+        browser: false,
+        node: true,
       },
     },
   ],

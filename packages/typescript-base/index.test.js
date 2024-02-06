@@ -1,7 +1,8 @@
-const { ESLint } = require('eslint')
-const fs = require('fs')
+import { ESLint } from 'eslint'
+import { getAbsolutePath } from 'esm-path'
+import fs from 'fs'
 
-const eslintConfig = require('.')
+import eslintConfig from './index.cjs'
 
 describe('@ivangabriele/eslint-config-typescript-base', () => {
   let results
@@ -16,7 +17,7 @@ describe('@ivangabriele/eslint-config-typescript-base', () => {
       },
     })
 
-    fs.writeFileSync(`${__dirname}/sample.ts`, `const foo = "bar"\n`)
+    fs.writeFileSync(getAbsolutePath(import.meta.url, 'sample.ts'), `const foo = "bar"\n`)
     results = await eslint.lintFiles('./sample.ts')
   })
 

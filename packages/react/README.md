@@ -7,7 +7,7 @@ My most commonly used ESLint configuration for Javascript with React.
 ## Usage
 
 ```sh
-npm i -D @ivangabriele/eslint-config-react \
+npm i -DE @ivangabriele/eslint-config-react \
   @ivangabriele/prettier-config \
   eslint \
   eslint-config-airbnb \
@@ -27,7 +27,7 @@ npm i -D @ivangabriele/eslint-config-react \
 or:
 
 ```sh
-yarn add -D @ivangabriele/eslint-config-react \
+yarn add -DE @ivangabriele/eslint-config-react \
   @ivangabriele/prettier-config \
   eslint \
   eslint-config-airbnb \
@@ -75,7 +75,7 @@ This is a monorepository, please check the [root readme][lnk-contribution].
 
 ---
 
-[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/test-and-publish.yml?branch=main&style=flat-square
+[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/check.yml?branch=main&style=flat-square
 [img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=flat-square
 [img-npm]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square
 [lnk-github]: https://github.com/ivangabriele/eslint-config/actions?query=branch%3Amain++

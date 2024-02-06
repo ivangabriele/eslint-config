@@ -3,14 +3,15 @@
   "description": "My most commonly used ESLint configuration for Typescript (without React).",
   "license": "MIT",
   "version": "8.0.1",
-  "main": "./index.js",
+  "type": "module",
+  "main": "./index.cjs",
   "engines": {
     "node": ">=20",
     "npm": "10"
   },
   "scripts": {
     "test": "npm run test:unit",
-    "test:unit": "jest --config=./config/jest.config.js"
+    "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "dependencies": {},
   "devDependencies": {
@@ -31,21 +32,21 @@
     "typescript": "5.3.3"
   },
   "peerDependencies": {
-    "@ivangabriele/prettier-config": "^4.0.0",
-    "@typescript-eslint/eslint-plugin": "^6.0.0",
-    "@typescript-eslint/parser": "^6.0.0",
-    "eslint": "^8.0.0",
-    "eslint-config-airbnb": "^19.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.0.0",
-    "eslint-plugin-jest": "^27.0.0",
-    "eslint-plugin-no-null": "^1.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "eslint-plugin-sort-destructure-keys": "^1.0.0",
-    "eslint-plugin-sort-keys-fix": "^1.0.0",
-    "eslint-plugin-typescript-sort-keys": "^3.0.0",
-    "typescript": "^5.0.0"
+    "@ivangabriele/prettier-config": "^4",
+    "@typescript-eslint/eslint-plugin": "^6",
+    "@typescript-eslint/parser": "^6",
+    "eslint": "^8",
+    "eslint-config-airbnb": "^19",
+    "eslint-config-airbnb-typescript": "^17",
+    "eslint-config-prettier": "^9",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-jest": "^27",
+    "eslint-plugin-no-null": "^1",
+    "eslint-plugin-prettier": "^5",
+    "eslint-plugin-sort-destructure-keys": "^1",
+    "eslint-plugin-sort-keys-fix": "^1",
+    "eslint-plugin-typescript-sort-keys": "^3",
+    "typescript": "^5"
   },
   "resolutions": {
     "json-schema": ">=0.4.0",

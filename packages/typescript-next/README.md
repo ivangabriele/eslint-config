@@ -7,7 +7,7 @@ My most commonly used ESLint configuration for Typescript with Next.js.
 ## Usage
 
 ```sh
-npm i -D @ivangabriele/eslint-config-typescript-next \
+npm i -DE @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config \
   @next/eslint-plugin-next \
   @typescript-eslint/eslint-plugin \
@@ -15,6 +15,7 @@ npm i -D @ivangabriele/eslint-config-typescript-next \
   eslint \
   eslint-config-airbnb \
   eslint-config-airbnb-typescript \
+  eslint-config-next \
   eslint-config-prettier \
   eslint-plugin-import \
   eslint-plugin-jest \
@@ -33,7 +34,7 @@ npm i -D @ivangabriele/eslint-config-typescript-next \
 or:
 
 ```sh
-yarn add -D @ivangabriele/eslint-config-typescript-next \
+yarn add -DE @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
@@ -89,7 +90,7 @@ This is a monorepository, please check the [root readme][lnk-contribution].
 
 ---
 
-[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/test-and-publish.yml?branch=main&style=flat-square
+[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/check.yml?branch=main&style=flat-square
 [img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=flat-square
 [img-npm]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-next?style=flat-square
 [lnk-github]: https://github.com/ivangabriele/eslint-config/actions?query=branch%3Amain++

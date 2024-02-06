@@ -1,3 +1,4 @@
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
   extends: ['airbnb-base', 'prettier'],
   plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'no-null'],

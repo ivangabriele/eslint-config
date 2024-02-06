@@ -25,7 +25,7 @@ My most commonly used ESLint configurations.
 [![img-npm-base]][lnk-npm-base]
 
 ```sh
-npm i -D @ivangabriele/eslint-config-base \
+npm i -DE @ivangabriele/eslint-config-base \
   @ivangabriele/prettier-config \
   eslint-config-airbnb-base \
   eslint-config-airbnb-base \
@@ -42,7 +42,7 @@ npm i -D @ivangabriele/eslint-config-base \
 or:
 
 ```sh
-yarn add -D @ivangabriele/eslint-config-base \
+yarn add -DE @ivangabriele/eslint-config-base \
   @ivangabriele/prettier-config \
   eslint-config-airbnb-base \
   eslint-config-airbnb-base \
@@ -78,7 +78,7 @@ And add this line to your `package.json`:
 [![img-npm-react]][lnk-npm-react]
 
 ```sh
-npm i -D @ivangabriele/eslint-config-react \
+npm i -DE @ivangabriele/eslint-config-react \
   @ivangabriele/prettier-config \
   eslint \
   eslint-config-airbnb \
@@ -98,7 +98,7 @@ npm i -D @ivangabriele/eslint-config-react \
 or:
 
 ```sh
-yarn add -D @ivangabriele/eslint-config-react \
+yarn add -DE @ivangabriele/eslint-config-react \
   @ivangabriele/prettier-config \
   eslint \
   eslint-config-airbnb \
@@ -137,7 +137,7 @@ And add this line to your `package.json`:
 [![img-npm-typescript-base]][lnk-npm-typescript-base]
 
 ```sh
-npm i -D @ivangabriele/eslint-config-typescript-base \
+npm i -DE @ivangabriele/eslint-config-typescript-base \
   @ivangabriele/prettier-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
@@ -159,7 +159,7 @@ npm i -D @ivangabriele/eslint-config-typescript-base \
 or:
 
 ```sh
-yarn add -D @ivangabriele/eslint-config-typescript-base \
+yarn add -DE @ivangabriele/eslint-config-typescript-base \
   @ivangabriele/prettier-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
@@ -203,7 +203,7 @@ And add this line to your `package.json`:
 [![img-npm-typescript-react]][lnk-npm-typescript-react]
 
 ```sh
-npm i -D @ivangabriele/eslint-config-typescript-react \
+npm i -DE @ivangabriele/eslint-config-typescript-react \
   @ivangabriele/prettier-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
@@ -228,7 +228,7 @@ npm i -D @ivangabriele/eslint-config-typescript-react \
 or:
 
 ```sh
-yarn add -D @ivangabriele/eslint-config-typescript-react \
+yarn add -DE @ivangabriele/eslint-config-typescript-react \
   @ivangabriele/prettier-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
@@ -275,7 +275,7 @@ And add this line to your `package.json`:
 [![img-npm-typescript-next]][lnk-npm-typescript-next]
 
 ```sh
-npm i -D @ivangabriele/eslint-config-typescript-next \
+npm i -DE @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config \
   @next/eslint-plugin-next \
   @typescript-eslint/eslint-plugin \
@@ -301,7 +301,7 @@ npm i -D @ivangabriele/eslint-config-typescript-next \
 or:
 
 ```sh
-yarn add -D @ivangabriele/eslint-config-typescript-next \
+yarn add -DE @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
@@ -357,7 +357,7 @@ Please check the [contributing documentation](CONTRIBUTING.md).
 
 ---
 
-[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/test-and-publish.yml?branch=main&style=flat-square
+[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/check.yml?branch=main&style=flat-square
 [img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=flat-square
 [img-npm-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-base?style=flat-square
 [img-npm-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square

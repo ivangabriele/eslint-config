@@ -1,8 +1,10 @@
+/** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
-  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript', 'prettier'],
-  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'typescript-sort-keys', 'no-null'],
+  extends: ['airbnb', 'airbnb/hooks', 'prettier'],
+  plugins: ['prettier', 'sort-keys-fix', 'sort-destructure-keys', 'no-null'],
   rules: {
     curly: ['error', 'all'],
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
     'newline-before-return': 'error',
     'no-console': 'error',
 
@@ -33,19 +35,15 @@ module.exports = {
     'sort-destructure-keys/sort-destructure-keys': ['error', { caseSensitive: false }],
 
     'sort-keys-fix/sort-keys-fix': ['error', 'asc', { caseSensitive: false, natural: false }],
-
-    '@typescript-eslint/lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
-    '@typescript-eslint/no-use-before-define': 'off',
-
-    'typescript-sort-keys/interface': 'error',
-    'typescript-sort-keys/string-enum': 'error',
   },
   overrides: [
     {
-      files: ['**/*.test.js', '**/*.test.jsx', '**/*.test.ts', '**/*.test.tsx'],
+      files: ['**/*.test.js'],
       plugins: ['jest'],
       env: {
+        browser: false,
         jest: true,
+        node: true,
       },
       rules: {
         'jest/no-disabled-tests': 'error',
@@ -56,20 +54,7 @@ module.exports = {
       },
     },
     {
-      files: [
-        '**/*.spec.js',
-        '**/*.test.js',
-        '**/*.test.jsx',
-        './*.cjs',
-        './*.js',
-        './config/**/*.js',
-        './scripts/**/*.js',
-        '**/*.spec.ts',
-        '**/*.test.ts',
-        '**/*.test.tsx',
-        './config/**/*.ts',
-        './scripts/**/*.ts',
-      ],
+      files: ['**/*.spec.js', '**/*.test.js', './*.cjs', './*.js', './config/*.js', './scripts/*.js'],
       rules: {
         'import/no-extraneous-dependencies': [
           'error',
@@ -77,22 +62,6 @@ module.exports = {
             devDependencies: true,
           },
         ],
-      },
-    },
-    {
-      files: [
-        '**/*.spec.js',
-        './*.cjs',
-        './*.js',
-        './config/**/*.js',
-        './scripts/**/*.js',
-        '**/*.spec.ts',
-        './config/**/*.ts',
-        './scripts/**/*.ts',
-      ],
-      env: {
-        browser: false,
-        node: true,
       },
     },
   ],
