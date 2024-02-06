@@ -283,6 +283,7 @@ npm i -DE @ivangabriele/eslint-config-typescript-next \
   eslint \
   eslint-config-airbnb \
   eslint-config-airbnb-typescript \
+  eslint-config-next \
   eslint-config-prettier \
   eslint-plugin-import \
   eslint-plugin-jest \
@@ -303,11 +304,13 @@ or:
 ```sh
 yarn add -DE @ivangabriele/eslint-config-typescript-next \
   @ivangabriele/prettier-config \
+  @next/eslint-plugin-next \
   @typescript-eslint/eslint-plugin \
   @typescript-eslint/parser \
   eslint \
   eslint-config-airbnb \
   eslint-config-airbnb-typescript \
+  eslint-config-next \
   eslint-config-prettier \
   eslint-plugin-import \
   eslint-plugin-jest \
