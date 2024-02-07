@@ -14,7 +14,7 @@
     "test:unit": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "devDependencies": {
-    "@ivangabriele/prettier-config": "4.0.1",
+    "@ivangabriele/prettier-config": "5.0.1",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "eslint": "8.56.0",
@@ -32,7 +32,7 @@
     "typescript": "5.3.3"
   },
   "peerDependencies": {
-    "@ivangabriele/prettier-config": "^4",
+    "@ivangabriele/prettier-config": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^6",
     "@typescript-eslint/parser": "^6",
     "eslint": "^8",
