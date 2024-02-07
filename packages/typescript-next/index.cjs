@@ -1,7 +1,7 @@
 /** @type {import('eslint').ESLint.ConfigData} */
 module.exports = {
   // https://nextjs.org/docs/pages/building-your-application/configuring/eslint#migrating-existing-config
-  extends: ['airbnb', 'airbnb/hooks', 'airbnb-typescript', 'next', 'prettier'],
+  extends: ['airbnb', 'airbnb-typescript', 'next', 'prettier'],
   plugins: [
     '@next/eslint-plugin-next',
     'prettier',
