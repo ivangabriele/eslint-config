@@ -1718,7 +1718,7 @@ __metadata:
   peerDependencies:
     "@ivangabriele/prettier-config": ^5.0.0
     eslint: ^8
-    eslint-config-airbnb-base: 15
+    eslint-config-airbnb-base: ^15
     eslint-config-prettier: ^9
     eslint-plugin-import: ^2
     eslint-plugin-jest: ^27
