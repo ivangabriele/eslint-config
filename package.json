@@ -12,7 +12,7 @@
     "./packages/*"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky",
     "test:lint": "eslint --config=./.eslintrc.dev.json .",
     "test:unit": "yarn workspaces foreach --all run test:unit"
   },
