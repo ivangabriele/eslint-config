@@ -44,5 +44,6 @@
   "workspaces": [
     "./packages/*"
   ],
-  "prettier": "@ivangabriele/prettier-config"
+  "prettier": "@ivangabriele/prettier-config",
+  "packageManager": "yarn@4.1.0"
 }
