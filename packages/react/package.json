@@ -26,7 +26,8 @@
     "eslint-plugin-react": "7.33.2",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-sort-destructure-keys": "1.5.0",
-    "eslint-plugin-sort-keys-fix": "1.1.2"
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "prettier": "3.2.5"
   },
   "peerDependencies": {
     "@ivangabriele/prettier-config": "^4",
@@ -43,24 +44,25 @@
     "eslint-plugin-sort-destructure-keys": "^1",
     "eslint-plugin-sort-keys-fix": "^1"
   },
-  "resolutions": {
-    "minimist": ">=1.2.6",
-    "semver": ">=6.3.1"
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
-  "homepage": "https://github.com/ivangabriele/eslint-config#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ivangabriele/eslint-config.git"
-  },
-  "bugs": "https://github.com/ivangabriele/eslint-config/issues",
   "author": {
     "name": "Ivan Gabriele",
     "email": "ivan.gabriele@protonmail.com",
     "url": "https://www.ivangabriele.com"
   },
+  "bugs": "https://github.com/ivangabriele/eslint-config/issues",
+  "homepage": "https://github.com/ivangabriele/eslint-config/blob/main/packages/react/README.md",
   "keywords": [
     "eslint",
     "config",
     "react"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivangabriele/eslint-config.git",
+    "directory": "packages/react"
+  }
 }

@@ -31,6 +31,7 @@
     "eslint-plugin-sort-destructure-keys": "1.5.0",
     "eslint-plugin-sort-keys-fix": "1.1.2",
     "eslint-plugin-typescript-sort-keys": "3.1.0",
+    "prettier": "3.2.5",
     "typescript": "5.3.3"
   },
   "peerDependencies": {
@@ -53,26 +54,26 @@
     "eslint-plugin-typescript-sort-keys": "^3",
     "typescript": "^5"
   },
-  "resolutions": {
-    "json-schema": ">=0.4.0",
-    "minimist": ">=1.2.6",
-    "semver": ">=6.3.1"
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
   },
-  "homepage": "https://github.com/ivangabriele/eslint-config#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ivangabriele/eslint-config.git"
-  },
-  "bugs": "https://github.com/ivangabriele/eslint-config/issues",
   "author": {
     "name": "Ivan Gabriele",
     "email": "ivan.gabriele@protonmail.com",
     "url": "https://www.ivangabriele.com"
   },
+  "bugs": "https://github.com/ivangabriele/eslint-config/issues",
+  "homepage": "https://github.com/ivangabriele/eslint-config/blob/main/packages/typescript-react/README.md",
   "keywords": [
     "eslint",
     "config",
     "typescript",
     "react"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivangabriele/eslint-config.git",
+    "directory": "packages/typescript-react"
+  }
 }
