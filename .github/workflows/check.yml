@@ -3,20 +3,34 @@ name: Check
 on: push
 
 jobs:
-  check:
-    name: Check
+  lint:
+    name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           cache: yarn
           node-version: 20
       - name: Install
-        run: npm ci
+        run: yarn --immutable
       - name: Lint
         run: npm run test:lint
-      - name: Unit Test
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          cache: yarn
+          node-version: 20
+      - name: Install
+        run: yarn --immutable
+      - name: Test
         run: npm run test:unit
