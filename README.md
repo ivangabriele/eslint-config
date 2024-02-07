@@ -356,18 +356,18 @@ yarn dlx @yarnpkg/sdks vscode
 
 ## Contribute
 
-Please check the [contributing documentation](CONTRIBUTING.md).
+Please refer to the [contribution guidelines](./CONTRIBUTING.md) for information on how to contribute to this project.
 
 ---
 
-[img-github]: https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/check.yml?branch=main&style=for-the-badge
+[img-github]:
+  https://img.shields.io/github/actions/workflow/status/ivangabriele/eslint-config/check.yml?branch=main&style=for-the-badge
 [img-license]: https://img.shields.io/github/license/ivangabriele/eslint-config?style=for-the-badge
 [img-npm-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-base?style=flat-square
 [img-npm-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-react?style=flat-square
 [img-npm-typescript-base]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-base?style=flat-square
 [img-npm-typescript-next]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-next?style=flat-square
 [img-npm-typescript-react]: https://img.shields.io/npm/v/@ivangabriele/eslint-config-typescript-react?style=flat-square
-
 [lnk-github]: https://github.com/ivangabriele/eslint-config/actions?query=branch%3Amain++
 [lnk-license]: https://github.com/ivangabriele/eslint-config/blob/main/LICENSE
 [lnk-npm-base]: https://www.npmjs.com/package/@ivangabriele/eslint-config-base

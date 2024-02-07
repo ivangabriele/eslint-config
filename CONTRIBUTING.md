@@ -1,34 +1,18 @@
 # Contributing
 
-### Getting Started
+- [Getting Started](#getting-started)
+- [Release](#release)
+
+## Getting Started
 
 ```sh
-npm i
+yarn
+yarn prepare
 ```
 
-### Release
+## Release
 
-```sh
-npm version X.Y.Z
-```
-
-This will automatically create a full tagged commit with packages version bump in a version branch before pushing them
-to the remote repository.
-
-### Recommended IDE Settings
-
-```json
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "eslint.codeActionsOnSave.mode": "all",
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-  "eslint.format.enable": true,
-  "editor.formatOnSave": true,
-  "eslint.packageManager": "npm",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
-}
-```
+1. Got to the [Release workflow](https://github.com/ivangabriele/eslint-config/actions/workflows/release.yml)
+2. Click on "Run workflow"
+3. Select "Branch: main" if it's not already selected
+4. Click on "Run workflow"
