@@ -2,7 +2,7 @@
   "name": "@ivangabriele/eslint-config-typescript-react",
   "description": "My most commonly used ESLint configuration for Typescript with React.",
   "license": "MIT",
-  "version": "9.0.6",
+  "version": "10.0.0",
   "type": "module",
   "main": "./index.cjs",
   "engines": {
