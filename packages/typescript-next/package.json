@@ -16,8 +16,8 @@
   "devDependencies": {
     "@ivangabriele/prettier-config": "5.0.1",
     "@next/eslint-plugin-next": "14.1.0",
-    "@typescript-eslint/eslint-plugin": "6.21.0",
-    "@typescript-eslint/parser": "6.21.0",
+    "@typescript-eslint/eslint-plugin": "7.4.0",
+    "@typescript-eslint/parser": "7.4.0",
     "eslint": "8.56.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "17.1.0",
@@ -39,8 +39,8 @@
   "peerDependencies": {
     "@ivangabriele/prettier-config": "^5.0.0",
     "@next/eslint-plugin-next": "^14",
-    "@typescript-eslint/eslint-plugin": "^6",
-    "@typescript-eslint/parser": "^6",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8",
     "eslint-config-airbnb": "^19",
     "eslint-config-airbnb-typescript": "^17",
